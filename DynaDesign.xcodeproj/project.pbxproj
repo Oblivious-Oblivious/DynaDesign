@@ -13,6 +13,24 @@
 		766B3C602762FEE500E41C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4E2762FEE300E41C9D /* ContentView.swift */; };
 		766B3C612762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
 		766B3C622762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
+		766B3C822763AEE600E41C9D /* Pane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C812763AEE600E41C9D /* Pane.swift */; };
+		766B3C832763AEE600E41C9D /* Pane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C812763AEE600E41C9D /* Pane.swift */; };
+		766B3C852763B03A00E41C9D /* SelectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C842763B03A00E41C9D /* SelectionHandler.swift */; };
+		766B3C862763B03A00E41C9D /* SelectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C842763B03A00E41C9D /* SelectionHandler.swift */; };
+		766B3C882763B07E00E41C9D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C872763B07D00E41C9D /* Mesh.swift */; };
+		766B3C892763B07E00E41C9D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C872763B07D00E41C9D /* Mesh.swift */; };
+		766B3C8B2763B0A700E41C9D /* Mesh+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */; };
+		766B3C8C2763B0A700E41C9D /* Mesh+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */; };
+		766B3C8E2763B0EF00E41C9D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8D2763B0EF00E41C9D /* Node.swift */; };
+		766B3C8F2763B0EF00E41C9D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8D2763B0EF00E41C9D /* Node.swift */; };
+		766B3C912763B10600E41C9D /* DragInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragInfo.swift */; };
+		766B3C922763B10600E41C9D /* DragInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragInfo.swift */; };
+		766B3C942763B14100E41C9D /* Mesh+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C932763B14100E41C9D /* Mesh+Addition.swift */; };
+		766B3C952763B14100E41C9D /* Mesh+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C932763B14100E41C9D /* Mesh+Addition.swift */; };
+		766B3C972763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */; };
+		766B3C982763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */; };
+		766B3C9A2763B1C700E41C9D /* Mesh+Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C992763B1C700E41C9D /* Mesh+Editing.swift */; };
+		766B3C9B2763B1C700E41C9D /* Mesh+Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C992763B1C700E41C9D /* Mesh+Editing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +40,15 @@
 		766B3C542762FEE500E41C9D /* DynaDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynaDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766B3C5A2762FEE500E41C9D /* DynaDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynaDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766B3C5C2762FEE500E41C9D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		766B3C812763AEE600E41C9D /* Pane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pane.swift; sourceTree = "<group>"; };
+		766B3C842763B03A00E41C9D /* SelectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionHandler.swift; sourceTree = "<group>"; };
+		766B3C872763B07D00E41C9D /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Demo.swift"; sourceTree = "<group>"; };
+		766B3C8D2763B0EF00E41C9D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		766B3C902763B10600E41C9D /* DragInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragInfo.swift; sourceTree = "<group>"; };
+		766B3C932763B14100E41C9D /* Mesh+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Addition.swift"; sourceTree = "<group>"; };
+		766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+MathHelper.swift"; sourceTree = "<group>"; };
+		766B3C992763B1C700E41C9D /* Mesh+Editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Editing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +81,11 @@
 		766B3C4C2762FEE300E41C9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				766B3C6C2763AD3800E41C9D /* Models */,
+				766B3C6B2763AD1C00E41C9D /* Views */,
 				766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */,
 				766B3C4E2762FEE300E41C9D /* ContentView.swift */,
+				766B3C6D2763AD4100E41C9D /* Extensions */,
 				766B3C4F2762FEE500E41C9D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +106,44 @@
 				766B3C5C2762FEE500E41C9D /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		766B3C6B2763AD1C00E41C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				766B3C802763AEDA00E41C9D /* Infinite Pane */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		766B3C6C2763AD3800E41C9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				766B3C902763B10600E41C9D /* DragInfo.swift */,
+				766B3C872763B07D00E41C9D /* Mesh.swift */,
+				766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */,
+				766B3C8D2763B0EF00E41C9D /* Node.swift */,
+				766B3C842763B03A00E41C9D /* SelectionHandler.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		766B3C6D2763AD4100E41C9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				766B3C932763B14100E41C9D /* Mesh+Addition.swift */,
+				766B3C992763B1C700E41C9D /* Mesh+Editing.swift */,
+				766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		766B3C802763AEDA00E41C9D /* Infinite Pane */ = {
+			isa = PBXGroup;
+			children = (
+				766B3C812763AEE600E41C9D /* Pane.swift */,
+			);
+			path = "Infinite Pane";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +245,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				766B3C5F2762FEE500E41C9D /* ContentView.swift in Sources */,
+				766B3C852763B03A00E41C9D /* SelectionHandler.swift in Sources */,
 				766B3C5D2762FEE500E41C9D /* DynaDesignApp.swift in Sources */,
+				766B3C912763B10600E41C9D /* DragInfo.swift in Sources */,
+				766B3C8B2763B0A700E41C9D /* Mesh+Demo.swift in Sources */,
+				766B3C822763AEE600E41C9D /* Pane.swift in Sources */,
+				766B3C942763B14100E41C9D /* Mesh+Addition.swift in Sources */,
+				766B3C882763B07E00E41C9D /* Mesh.swift in Sources */,
+				766B3C9A2763B1C700E41C9D /* Mesh+Editing.swift in Sources */,
+				766B3C972763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */,
+				766B3C8E2763B0EF00E41C9D /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +263,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				766B3C602762FEE500E41C9D /* ContentView.swift in Sources */,
+				766B3C862763B03A00E41C9D /* SelectionHandler.swift in Sources */,
 				766B3C5E2762FEE500E41C9D /* DynaDesignApp.swift in Sources */,
+				766B3C922763B10600E41C9D /* DragInfo.swift in Sources */,
+				766B3C8C2763B0A700E41C9D /* Mesh+Demo.swift in Sources */,
+				766B3C832763AEE600E41C9D /* Pane.swift in Sources */,
+				766B3C952763B14100E41C9D /* Mesh+Addition.swift in Sources */,
+				766B3C892763B07E00E41C9D /* Mesh.swift in Sources */,
+				766B3C9B2763B1C700E41C9D /* Mesh+Editing.swift in Sources */,
+				766B3C982763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */,
+				766B3C8F2763B0EF00E41C9D /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
