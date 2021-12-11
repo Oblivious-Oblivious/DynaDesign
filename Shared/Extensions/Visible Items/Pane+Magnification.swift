@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+let zoom_min_scale = CGFloat(0.05);
+let zoom_max_scale = CGFloat(4.0);
+
 extension Pane {
     private func scaled_offset(_ scale: CGFloat, initial_value: CGPoint) -> CGPoint {
         let new_x = initial_value.x * scale;
@@ -16,21 +19,19 @@ extension Pane {
     }
 
     private func clamped_scale(_ scale: CGFloat, initial_value: CGFloat?)
-    -> (scale: CGFloat, did_clamp: Bool) {
-        let min_scale = CGFloat(0.1);
-        let max_scale = CGFloat(2.0);
+    -> (new_scale: CGFloat, did_clamp: Bool) {
+        let raw = scale.magnitude * (initial_value ?? zoom_max_scale);
+        let new_scale = max(zoom_min_scale, min(zoom_max_scale, raw));
+        let did_clamp = raw != new_scale;
 
-        let raw = scale.magnitude * (initial_value ?? max_scale);
-        let value = max(min_scale, min(max_scale, raw));
-        let did_clamp = raw != value;
-
-        return (value, did_clamp);
+        return (new_scale, did_clamp);
     }
 
     func process_scale_change(_ value: CGFloat) {
-        let clamped = clamped_scale(value, initial_value: self.inital_zoom_scale);
-        self.zoom_scale = clamped.scale;
-
+        let clamped = clamped_scale(value, initial_value: self.current_zoom_scale);
+        self.zoom_scale = clamped.new_scale;
+        
+        /* Position to zoom towards */
         if !clamped.did_clamp, let point = self.initial_portal_position {
             self.portal_position = scaled_offset(value, initial_value: point);
         }
