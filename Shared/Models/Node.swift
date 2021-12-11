@@ -13,8 +13,4 @@ typealias NodeID = UUID;
 struct Node: Identifiable {
     var id: NodeID = NodeID();
     var position: CGPoint = .zero;
-    
-    var visual_id: String {
-        return id.uuidString + "\(id.hashValue)";
-    }
 }

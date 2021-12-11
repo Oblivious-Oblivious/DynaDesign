@@ -17,9 +17,7 @@ class Mesh: ObservableObject {
         self.root_node_id = root.id;
         add_node(root);
     }
-}
-
-extension Mesh {
+    
     func root_node() -> Node {
         guard let root = self.nodes.filter({
             $0.id == self.root_node_id
