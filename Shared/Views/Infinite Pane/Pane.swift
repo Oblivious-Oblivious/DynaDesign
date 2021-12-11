@@ -20,7 +20,7 @@ struct Pane: View {
     
     /* Zooming */
     @State var zoom_scale = CGFloat(1.0);
-    @State var inital_zoom_scale: CGFloat?;
+    @State var current_zoom_scale: CGFloat?;
     @State var initial_portal_position: CGPoint?;
     
     var body: some View {
@@ -68,15 +68,15 @@ extension Pane {
     func pane_magnification_gesture() -> some Gesture {
         MagnificationGesture()
             .onChanged { value in
-                if self.inital_zoom_scale == nil {
-                    self.inital_zoom_scale = self.zoom_scale;
+                if self.current_zoom_scale == nil {
+                    self.current_zoom_scale = self.zoom_scale;
                     self.initial_portal_position = self.portal_position;
                 }
                 self.process_scale_change(value);
             }
             .onEnded { value in
                 self.process_scale_change(value);
-                self.inital_zoom_scale = nil;
+                self.current_zoom_scale = nil;
                 self.initial_portal_position = nil;
             }
     }
