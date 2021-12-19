@@ -12,10 +12,7 @@ let zoom_max_scale = CGFloat(4.0);
 
 extension Pane {
     private func scaled_offset(_ scale: CGFloat, initial_value: CGPoint) -> CGPoint {
-        let new_x = initial_value.x * scale;
-        let new_y = initial_value.y * scale;
-
-        return CGPoint(x: new_x, y: new_y);
+        return CGPoint(x: initial_value.x * scale, y: initial_value.y * scale);
     }
 
     private func clamped_scale(_ scale: CGFloat, initial_value: CGFloat?)
