@@ -5,8 +5,7 @@
 //  Created by Thanasis Papapostolou on 10/12/21.
 //
 
-import Foundation
-import CoreGraphics
+import SwiftUI
 
 class Mesh: ObservableObject {
     let root_node_id: NodeID;

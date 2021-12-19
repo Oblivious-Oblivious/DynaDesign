@@ -15,11 +15,15 @@ struct Pane: View {
     /* Dragging */
     @State var portal_position = CGPoint.zero;
     @State var drag_offset = CGSize.zero;
+    
+    /* Pane+Drag */
     @State var is_dragging = false;
     @State var is_dragging_mesh = false;
     
     /* Zooming */
     @State var zoom_scale = CGFloat(1.0);
+    
+    /* Pane+Magnification */
     @State var current_zoom_scale: CGFloat?;
     @State var initial_portal_position: CGPoint?;
     

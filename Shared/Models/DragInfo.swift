@@ -5,7 +5,7 @@
 //  Created by Thanasis Papapostolou on 10/12/21.
 //
 
-import CoreGraphics
+import SwiftUI
 
 struct DragInfo {
     var id: NodeID;

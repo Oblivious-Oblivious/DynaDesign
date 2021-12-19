@@ -5,8 +5,7 @@
 //  Created by Thanasis Papapostolou on 10/12/21.
 //
 
-import Foundation
-import CoreGraphics
+import SwiftUI
 
 class SelectionHandler: ObservableObject {
     @Published var dragging_nodes: [DragInfo] = [];

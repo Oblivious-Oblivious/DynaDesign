@@ -51,10 +51,7 @@ extension Pane {
     func pane_drag_gesture(on pane: GeometryProxy) -> some Gesture {
         DragGesture()
             .onChanged { value in
-                self.process_drag_change(
-                    value,
-                    container_size: pane.size
-                );
+                self.process_drag_change(value, container_size: pane.size);
             }
             .onEnded { value in
                 self.process_drag_end(value);
