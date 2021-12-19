@@ -50,38 +50,6 @@ struct Pane: View {
     }
 }
 
-/* Gesture extension */
-extension Pane {
-    func pane_drag_gesture(on pane: GeometryProxy) -> some Gesture {
-        DragGesture()
-            .onChanged { value in
-                self.process_drag_change(
-                    value,
-                    container_size: pane.size
-                );
-            }
-            .onEnded { value in
-                self.process_drag_end(value);
-            };
-    }
-    
-    func pane_magnification_gesture() -> some Gesture {
-        MagnificationGesture()
-            .onChanged { value in
-                if self.current_zoom_scale == nil {
-                    self.current_zoom_scale = self.zoom_scale;
-                    self.initial_portal_position = self.portal_position;
-                }
-                self.process_scale_change(value);
-            }
-            .onEnded { value in
-                self.process_scale_change(value);
-                self.current_zoom_scale = nil;
-                self.initial_portal_position = nil;
-            }
-    }
-}
-
 struct Pane_Previews: PreviewProvider {
     static var previews: some View {
         let mesh = Mesh.sample_mesh();

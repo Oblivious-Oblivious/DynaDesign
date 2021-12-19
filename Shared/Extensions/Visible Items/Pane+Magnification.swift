@@ -27,7 +27,7 @@ extension Pane {
         return (new_scale, did_clamp);
     }
 
-    func process_scale_change(_ value: CGFloat) {
+    private func process_scale_change(_ value: CGFloat) {
         let clamped = clamped_scale(value, initial_value: self.current_zoom_scale);
         self.zoom_scale = clamped.new_scale;
         
@@ -35,5 +35,21 @@ extension Pane {
         if !clamped.did_clamp, let point = self.initial_portal_position {
             self.portal_position = scaled_offset(value, initial_value: point);
         }
+    }
+    
+    func pane_magnification_gesture() -> some Gesture {
+        MagnificationGesture()
+            .onChanged { value in
+                if self.current_zoom_scale == nil {
+                    self.current_zoom_scale = self.zoom_scale;
+                    self.initial_portal_position = self.portal_position;
+                }
+                self.process_scale_change(value);
+            }
+            .onEnded { value in
+                self.process_scale_change(value);
+                self.current_zoom_scale = nil;
+                self.initial_portal_position = nil;
+            }
     }
 }

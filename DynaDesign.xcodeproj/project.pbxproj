@@ -25,10 +25,6 @@
 		766B3C8F2763B0EF00E41C9D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8D2763B0EF00E41C9D /* Node.swift */; };
 		766B3C912763B10600E41C9D /* DragInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragInfo.swift */; };
 		766B3C922763B10600E41C9D /* DragInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragInfo.swift */; };
-		766B3C942763B14100E41C9D /* Mesh+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C932763B14100E41C9D /* Mesh+Addition.swift */; };
-		766B3C952763B14100E41C9D /* Mesh+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C932763B14100E41C9D /* Mesh+Addition.swift */; };
-		766B3C972763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */; };
-		766B3C982763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */; };
 		766B3C9D2763B36D00E41C9D /* Int+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C9C2763B36D00E41C9D /* Int+Radians.swift */; };
 		766B3C9E2763B36D00E41C9D /* Int+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C9C2763B36D00E41C9D /* Int+Radians.swift */; };
 		766B3CA12763B46100E41C9D /* BlockMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA02763B46100E41C9D /* BlockMapView.swift */; };
@@ -41,8 +37,6 @@
 		766B3CAB2763BF3400E41C9D /* Pane+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA92763BF3400E41C9D /* Pane+Drag.swift */; };
 		766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */; };
 		766B3CAE2763C13600E41C9D /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */; };
-		766B3CB02763C17100E41C9D /* Mesh+Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAF2763C17100E41C9D /* Mesh+Editing.swift */; };
-		766B3CB12763C17100E41C9D /* Mesh+Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAF2763C17100E41C9D /* Mesh+Editing.swift */; };
 		766B3CB32763C31200E41C9D /* Block+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CB22763C31200E41C9D /* Block+Drag.swift */; };
 		766B3CB42763C31200E41C9D /* Block+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CB22763C31200E41C9D /* Block+Drag.swift */; };
 /* End PBXBuildFile section */
@@ -60,15 +54,12 @@
 		766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Demo.swift"; sourceTree = "<group>"; };
 		766B3C8D2763B0EF00E41C9D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		766B3C902763B10600E41C9D /* DragInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragInfo.swift; sourceTree = "<group>"; };
-		766B3C932763B14100E41C9D /* Mesh+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Addition.swift"; sourceTree = "<group>"; };
-		766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+MathHelper.swift"; sourceTree = "<group>"; };
 		766B3C9C2763B36D00E41C9D /* Int+Radians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Radians.swift"; sourceTree = "<group>"; };
 		766B3CA02763B46100E41C9D /* BlockMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMapView.swift; sourceTree = "<group>"; };
 		766B3CA32763B6A800E41C9D /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		766B3CA62763BDD400E41C9D /* Pane+Magnification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pane+Magnification.swift"; sourceTree = "<group>"; };
 		766B3CA92763BF3400E41C9D /* Pane+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pane+Drag.swift"; sourceTree = "<group>"; };
 		766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Helper.swift"; sourceTree = "<group>"; };
-		766B3CAF2763C17100E41C9D /* Mesh+Editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Editing.swift"; sourceTree = "<group>"; };
 		766B3CB22763C31200E41C9D /* Block+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Block+Drag.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				766B3CB52763C45200E41C9D /* SwiftUI Internals */,
-				766B3CB62763C47200E41C9D /* Mesh Functionality */,
 				766B3CB82763C49200E41C9D /* Visible Items */,
 			);
 			path = Extensions;
@@ -184,16 +174,6 @@
 				766B3C9C2763B36D00E41C9D /* Int+Radians.swift */,
 			);
 			path = "SwiftUI Internals";
-			sourceTree = "<group>";
-		};
-		766B3CB62763C47200E41C9D /* Mesh Functionality */ = {
-			isa = PBXGroup;
-			children = (
-				766B3C932763B14100E41C9D /* Mesh+Addition.swift */,
-				766B3CAF2763C17100E41C9D /* Mesh+Editing.swift */,
-				766B3C962763B1AA00E41C9D /* Mesh+MathHelper.swift */,
-			);
-			path = "Mesh Functionality";
 			sourceTree = "<group>";
 		};
 		766B3CB82763C49200E41C9D /* Visible Items */ = {
@@ -315,12 +295,9 @@
 				766B3C8B2763B0A700E41C9D /* Mesh+Demo.swift in Sources */,
 				766B3C822763AEE600E41C9D /* Pane.swift in Sources */,
 				766B3CA12763B46100E41C9D /* BlockMapView.swift in Sources */,
-				766B3C942763B14100E41C9D /* Mesh+Addition.swift in Sources */,
 				766B3C882763B07E00E41C9D /* Mesh.swift in Sources */,
 				766B3C9D2763B36D00E41C9D /* Int+Radians.swift in Sources */,
-				766B3C972763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */,
 				766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
-				766B3CB02763C17100E41C9D /* Mesh+Editing.swift in Sources */,
 				766B3C8E2763B0EF00E41C9D /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,12 +317,9 @@
 				766B3C8C2763B0A700E41C9D /* Mesh+Demo.swift in Sources */,
 				766B3C832763AEE600E41C9D /* Pane.swift in Sources */,
 				766B3CA22763B46100E41C9D /* BlockMapView.swift in Sources */,
-				766B3C952763B14100E41C9D /* Mesh+Addition.swift in Sources */,
 				766B3C892763B07E00E41C9D /* Mesh.swift in Sources */,
 				766B3C9E2763B36D00E41C9D /* Int+Radians.swift in Sources */,
-				766B3C982763B1AA00E41C9D /* Mesh+MathHelper.swift in Sources */,
 				766B3CAE2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
-				766B3CB12763C17100E41C9D /* Mesh+Editing.swift in Sources */,
 				766B3C8F2763B0EF00E41C9D /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

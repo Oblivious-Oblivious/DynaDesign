@@ -8,7 +8,6 @@
 import Foundation
 import CoreGraphics
 
-/* SelectionHandler+Dragging */
 class SelectionHandler: ObservableObject {
     @Published var dragging_nodes: [DragInfo] = [];
     @Published private(set) var selected_node_ids: [NodeID] = [];

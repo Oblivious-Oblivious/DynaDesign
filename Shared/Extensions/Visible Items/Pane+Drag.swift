@@ -1,5 +1,5 @@
 //
-//  Pane+Drag.swift.swift
+//  Pane+Drag.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -18,7 +18,7 @@ extension Pane {
         );
     }
 
-    func process_drag_change(_ value: DragGesture.Value, container_size: CGSize) {
+    private func process_drag_change(_ value: DragGesture.Value, container_size: CGSize) {
         if !self.is_dragging {
             self.is_dragging = true;
             self.is_dragging_mesh = true;
@@ -32,7 +32,7 @@ extension Pane {
         }
     }
     
-    func process_drag_end(_ value: DragGesture.Value) {
+    private func process_drag_end(_ value: DragGesture.Value) {
         self.is_dragging = false;
         self.drag_offset = .zero;
         
@@ -46,5 +46,18 @@ extension Pane {
             process_node_translation(value.translation);
             self.selection.stop_dragging(mesh);
         }
+    }
+    
+    func pane_drag_gesture(on pane: GeometryProxy) -> some Gesture {
+        DragGesture()
+            .onChanged { value in
+                self.process_drag_change(
+                    value,
+                    container_size: pane.size
+                );
+            }
+            .onEnded { value in
+                self.process_drag_end(value);
+            };
     }
 }
