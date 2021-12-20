@@ -46,7 +46,6 @@ struct Pane: View {
                     x: self.portal_position.x + self.drag_offset.width,
                     y: self.portal_position.y + self.drag_offset.height
                 )
-                .animation(.spring())
             }
             .gesture(pane_drag_gesture(on: pane))
             .gesture(pane_magnification_gesture());

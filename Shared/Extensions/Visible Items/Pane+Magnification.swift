@@ -37,16 +37,20 @@ extension Pane {
     func pane_magnification_gesture() -> some Gesture {
         MagnificationGesture()
             .onChanged { value in
-                if self.current_zoom_scale == nil {
-                    self.current_zoom_scale = self.zoom_scale;
-                    self.initial_portal_position = self.portal_position;
+                withAnimation(.spring()) {
+                    if self.current_zoom_scale == nil {
+                        self.current_zoom_scale = self.zoom_scale;
+                        self.initial_portal_position = self.portal_position;
+                    }
+                    self.process_scale_change(value);
                 }
-                self.process_scale_change(value);
             }
             .onEnded { value in
-                self.process_scale_change(value);
-                self.current_zoom_scale = nil;
-                self.initial_portal_position = nil;
+                withAnimation(.spring()) {
+                    self.process_scale_change(value);
+                    self.current_zoom_scale = nil;
+                    self.initial_portal_position = nil;
+                }
             }
     }
 }

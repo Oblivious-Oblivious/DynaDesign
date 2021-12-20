@@ -21,8 +21,8 @@ extension Block {
             .onChanged({ value in
                 withAnimation(.easeInOut(duration: 0.33)) {
                     self.animate = true
+                    self.position = value.location;
                 }
-                self.position = value.location;
             })
             .onEnded({ _ in
                 withAnimation(.easeInOut(duration: 0.33)) {
