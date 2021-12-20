@@ -8,39 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		766B3C5D2762FEE500E41C9D /* DynaDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */; };
-		766B3C5E2762FEE500E41C9D /* DynaDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */; };
 		766B3C5F2762FEE500E41C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4E2762FEE300E41C9D /* ContentView.swift */; };
-		766B3C602762FEE500E41C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4E2762FEE300E41C9D /* ContentView.swift */; };
 		766B3C612762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
-		766B3C622762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
 		766B3C822763AEE600E41C9D /* Pane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C812763AEE600E41C9D /* Pane.swift */; };
-		766B3C832763AEE600E41C9D /* Pane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C812763AEE600E41C9D /* Pane.swift */; };
 		766B3C852763B03A00E41C9D /* SelectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C842763B03A00E41C9D /* SelectionHandler.swift */; };
-		766B3C862763B03A00E41C9D /* SelectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C842763B03A00E41C9D /* SelectionHandler.swift */; };
 		766B3C882763B07E00E41C9D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C872763B07D00E41C9D /* Mesh.swift */; };
-		766B3C892763B07E00E41C9D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C872763B07D00E41C9D /* Mesh.swift */; };
 		766B3C8B2763B0A700E41C9D /* Mesh+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */; };
-		766B3C8C2763B0A700E41C9D /* Mesh+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8A2763B0A700E41C9D /* Mesh+Demo.swift */; };
 		766B3C8E2763B0EF00E41C9D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8D2763B0EF00E41C9D /* Node.swift */; };
-		766B3C8F2763B0EF00E41C9D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8D2763B0EF00E41C9D /* Node.swift */; };
 		766B3C912763B10600E41C9D /* DragInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragInfo.swift */; };
-		766B3C922763B10600E41C9D /* DragInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragInfo.swift */; };
 		766B3C9D2763B36D00E41C9D /* Int+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C9C2763B36D00E41C9D /* Int+Radians.swift */; };
-		766B3C9E2763B36D00E41C9D /* Int+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C9C2763B36D00E41C9D /* Int+Radians.swift */; };
 		766B3CA12763B46100E41C9D /* PaneMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA02763B46100E41C9D /* PaneMapView.swift */; };
-		766B3CA22763B46100E41C9D /* PaneMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA02763B46100E41C9D /* PaneMapView.swift */; };
 		766B3CA42763B6A800E41C9D /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA32763B6A800E41C9D /* Block.swift */; };
-		766B3CA52763B6A800E41C9D /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA32763B6A800E41C9D /* Block.swift */; };
 		766B3CA72763BDD400E41C9D /* Pane+Magnification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA62763BDD400E41C9D /* Pane+Magnification.swift */; };
-		766B3CA82763BDD400E41C9D /* Pane+Magnification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA62763BDD400E41C9D /* Pane+Magnification.swift */; };
 		766B3CAA2763BF3400E41C9D /* Pane+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA92763BF3400E41C9D /* Pane+Drag.swift */; };
-		766B3CAB2763BF3400E41C9D /* Pane+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA92763BF3400E41C9D /* Pane+Drag.swift */; };
 		766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */; };
-		766B3CAE2763C13600E41C9D /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */; };
 		766B3CB32763C31200E41C9D /* Block+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CB22763C31200E41C9D /* Block+Drag.swift */; };
-		766B3CB42763C31200E41C9D /* Block+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CB22763C31200E41C9D /* Block+Drag.swift */; };
-		76A03468276FE27500BE610E /* ItemNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A03467276FE27500BE610E /* ItemNavbar.swift */; };
-		76A03469276FE27500BE610E /* ItemNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A03467276FE27500BE610E /* ItemNavbar.swift */; };
+		76A0346C2770382200BE610E /* SignInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0346B2770382200BE610E /* SignInPage.swift */; };
+		76A3600827704DE600E833A7 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 76A3600727704DE600E833A7 /* WaterfallGrid */; };
+		76A3600A27704E2300E833A7 /* ProjectsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3600927704E2300E833A7 /* ProjectsGrid.swift */; };
+		76A3600D2770544E00E833A7 /* ProjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3600C2770544E00E833A7 /* ProjectItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +34,6 @@
 		766B3C4E2762FEE300E41C9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		766B3C4F2762FEE500E41C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766B3C542762FEE500E41C9D /* DynaDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynaDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		766B3C5A2762FEE500E41C9D /* DynaDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynaDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		766B3C5C2762FEE500E41C9D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		766B3C812763AEE600E41C9D /* Pane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pane.swift; sourceTree = "<group>"; };
 		766B3C842763B03A00E41C9D /* SelectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionHandler.swift; sourceTree = "<group>"; };
 		766B3C872763B07D00E41C9D /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
@@ -63,7 +47,9 @@
 		766B3CA92763BF3400E41C9D /* Pane+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pane+Drag.swift"; sourceTree = "<group>"; };
 		766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Helper.swift"; sourceTree = "<group>"; };
 		766B3CB22763C31200E41C9D /* Block+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Block+Drag.swift"; sourceTree = "<group>"; };
-		76A03467276FE27500BE610E /* ItemNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemNavbar.swift; sourceTree = "<group>"; };
+		76A0346B2770382200BE610E /* SignInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPage.swift; sourceTree = "<group>"; };
+		76A3600927704E2300E833A7 /* ProjectsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsGrid.swift; sourceTree = "<group>"; };
+		76A3600C2770544E00E833A7 /* ProjectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766B3C572762FEE500E41C9D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				76A3600827704DE600E833A7 /* WaterfallGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				766B3C4C2762FEE300E41C9D /* Shared */,
-				766B3C5B2762FEE500E41C9D /* macOS */,
 				766B3C552762FEE500E41C9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,26 +88,18 @@
 			isa = PBXGroup;
 			children = (
 				766B3C542762FEE500E41C9D /* DynaDesign.app */,
-				766B3C5A2762FEE500E41C9D /* DynaDesign.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		766B3C5B2762FEE500E41C9D /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				766B3C5C2762FEE500E41C9D /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		766B3C6B2763AD1C00E41C9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				766B3C802763AEDA00E41C9D /* Infinite Pane */,
 				766B3C9F2763B44400E41C9D /* Block Components */,
+				766B3C802763AEDA00E41C9D /* Infinite Pane */,
+				76A3600F2770564000E833A7 /* Main Page */,
+				76A0346A277036D600BE610E /* Project Selection */,
 				766B3C4E2762FEE300E41C9D /* ContentView.swift */,
-				76A03467276FE27500BE610E /* ItemNavbar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +161,23 @@
 			path = "Visible Items";
 			sourceTree = "<group>";
 		};
+		76A0346A277036D600BE610E /* Project Selection */ = {
+			isa = PBXGroup;
+			children = (
+				76A3600927704E2300E833A7 /* ProjectsGrid.swift */,
+				76A3600C2770544E00E833A7 /* ProjectItem.swift */,
+			);
+			path = "Project Selection";
+			sourceTree = "<group>";
+		};
+		76A3600F2770564000E833A7 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				76A0346B2770382200BE610E /* SignInPage.swift */,
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,25 +194,11 @@
 			dependencies = (
 			);
 			name = "DynaDesign (iOS)";
+			packageProductDependencies = (
+				76A3600727704DE600E833A7 /* WaterfallGrid */,
+			);
 			productName = "DynaDesign (iOS)";
 			productReference = 766B3C542762FEE500E41C9D /* DynaDesign.app */;
-			productType = "com.apple.product-type.application";
-		};
-		766B3C592762FEE500E41C9D /* DynaDesign (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 766B3C682762FEE500E41C9D /* Build configuration list for PBXNativeTarget "DynaDesign (macOS)" */;
-			buildPhases = (
-				766B3C562762FEE500E41C9D /* Sources */,
-				766B3C572762FEE500E41C9D /* Frameworks */,
-				766B3C582762FEE500E41C9D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "DynaDesign (macOS)";
-			productName = "DynaDesign (macOS)";
-			productReference = 766B3C5A2762FEE500E41C9D /* DynaDesign.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -240,9 +214,6 @@
 					766B3C532762FEE500E41C9D = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					766B3C592762FEE500E41C9D = {
-						CreatedOnToolsVersion = 13.1;
-					};
 				};
 			};
 			buildConfigurationList = 766B3C4B2762FEE300E41C9D /* Build configuration list for PBXProject "DynaDesign" */;
@@ -254,12 +225,14 @@
 				Base,
 			);
 			mainGroup = 766B3C472762FEE300E41C9D;
+			packageReferences = (
+				76A3600627704DE600E833A7 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+			);
 			productRefGroup = 766B3C552762FEE500E41C9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				766B3C532762FEE500E41C9D /* DynaDesign (iOS) */,
-				766B3C592762FEE500E41C9D /* DynaDesign (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -270,14 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				766B3C612762FEE500E41C9D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766B3C582762FEE500E41C9D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				766B3C622762FEE500E41C9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,41 +257,20 @@
 				766B3CB32763C31200E41C9D /* Block+Drag.swift in Sources */,
 				766B3CA42763B6A800E41C9D /* Block.swift in Sources */,
 				766B3C852763B03A00E41C9D /* SelectionHandler.swift in Sources */,
-				76A03468276FE27500BE610E /* ItemNavbar.swift in Sources */,
 				766B3CAA2763BF3400E41C9D /* Pane+Drag.swift in Sources */,
 				766B3CA72763BDD400E41C9D /* Pane+Magnification.swift in Sources */,
 				766B3C5D2762FEE500E41C9D /* DynaDesignApp.swift in Sources */,
 				766B3C912763B10600E41C9D /* DragInfo.swift in Sources */,
 				766B3C8B2763B0A700E41C9D /* Mesh+Demo.swift in Sources */,
 				766B3C822763AEE600E41C9D /* Pane.swift in Sources */,
+				76A3600D2770544E00E833A7 /* ProjectItem.swift in Sources */,
+				76A3600A27704E2300E833A7 /* ProjectsGrid.swift in Sources */,
 				766B3CA12763B46100E41C9D /* PaneMapView.swift in Sources */,
+				76A0346C2770382200BE610E /* SignInPage.swift in Sources */,
 				766B3C882763B07E00E41C9D /* Mesh.swift in Sources */,
 				766B3C9D2763B36D00E41C9D /* Int+Radians.swift in Sources */,
 				766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
 				766B3C8E2763B0EF00E41C9D /* Node.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766B3C562762FEE500E41C9D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				766B3C602762FEE500E41C9D /* ContentView.swift in Sources */,
-				766B3CB42763C31200E41C9D /* Block+Drag.swift in Sources */,
-				766B3CA52763B6A800E41C9D /* Block.swift in Sources */,
-				766B3C862763B03A00E41C9D /* SelectionHandler.swift in Sources */,
-				76A03469276FE27500BE610E /* ItemNavbar.swift in Sources */,
-				766B3CAB2763BF3400E41C9D /* Pane+Drag.swift in Sources */,
-				766B3CA82763BDD400E41C9D /* Pane+Magnification.swift in Sources */,
-				766B3C5E2762FEE500E41C9D /* DynaDesignApp.swift in Sources */,
-				766B3C922763B10600E41C9D /* DragInfo.swift in Sources */,
-				766B3C8C2763B0A700E41C9D /* Mesh+Demo.swift in Sources */,
-				766B3C832763AEE600E41C9D /* Pane.swift in Sources */,
-				766B3CA22763B46100E41C9D /* PaneMapView.swift in Sources */,
-				766B3C892763B07E00E41C9D /* Mesh.swift in Sources */,
-				766B3C9E2763B36D00E41C9D /* Int+Radians.swift in Sources */,
-				766B3CAE2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
-				766B3C8F2763B0EF00E41C9D /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,64 +449,6 @@
 			};
 			name = Release;
 		};
-		766B3C692762FEE500E41C9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7R25Q8NQQ3;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oblivious.DynaDesign;
-				PRODUCT_NAME = DynaDesign;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		766B3C6A2762FEE500E41C9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7R25Q8NQQ3;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oblivious.DynaDesign;
-				PRODUCT_NAME = DynaDesign;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,16 +470,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		766B3C682762FEE500E41C9D /* Build configuration list for PBXNativeTarget "DynaDesign (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				766B3C692762FEE500E41C9D /* Debug */,
-				766B3C6A2762FEE500E41C9D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76A3600627704DE600E833A7 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76A3600727704DE600E833A7 /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76A3600627704DE600E833A7 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 766B3C482762FEE300E41C9D /* Project object */;
 }
