@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        let mesh = Mesh.sample_mesh();
-        let selection = SelectionHandler();
+        let mesh = MeshController.sample_mesh();
+        let selection = SelectionController();
         
-        Pane(
+        PaneView(
             mesh: mesh,
             selection: selection,
             pane_color: Color("PaneColor")

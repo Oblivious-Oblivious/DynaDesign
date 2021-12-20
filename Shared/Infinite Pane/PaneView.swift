@@ -1,5 +1,5 @@
 //
-//  Pane.swift
+//  PaneView.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct Pane: View {
-    @ObservedObject var mesh: Mesh;
-    @ObservedObject var selection: SelectionHandler;
+struct PaneView: View {
+    @ObservedObject var mesh: MeshController;
+    @ObservedObject var selection: SelectionController;
     @State var pane_color: Color;
     
     /* Dragging */
     @State var portal_position = CGPoint.zero;
     @State var drag_offset = CGSize.zero;
     
-    /* Pane+Drag */
+    /* PaneView+Drag */
     @State var is_dragging = false;
     @State var is_dragging_mesh = false;
     
     /* Zooming */
     @State var zoom_scale = CGFloat(1.0);
     
-    /* Pane+Magnification */
+    /* PaneView+Magnification */
     @State var current_zoom_scale: CGFloat?;
     @State var initial_portal_position: CGPoint?;
     
@@ -55,10 +55,10 @@ struct Pane: View {
 
 struct Pane_Previews: PreviewProvider {
     static var previews: some View {
-        let mesh = Mesh.sample_mesh();
-        let selection = SelectionHandler();
+        let mesh = MeshController.sample_mesh();
+        let selection = SelectionController();
         
-        return Pane(
+        return PaneView(
             mesh: mesh,
             selection: selection,
             pane_color: Color("PaneColor")

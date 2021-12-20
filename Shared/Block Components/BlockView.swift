@@ -1,5 +1,5 @@
 //
-//  Block.swift
+//  BlockView.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct Block: View {
+struct BlockView: View {
     var block_color: Color;
-    @State var node: Node;
-    @ObservedObject var selection: SelectionHandler;
+    @State var node: NodeModel;
+    @ObservedObject var selection: SelectionController;
     
     /* Initially position mesh in the approximate center */
     @State var position = CGPoint(
@@ -42,10 +42,10 @@ struct Block: View {
 
 struct Block_Previews: PreviewProvider {
     static var previews: some View {
-        let selection = SelectionHandler();
-        let node = Node();
+        let selection = SelectionController();
+        let node = NodeModel();
 
-        Block(
+        BlockView(
             block_color: Color.blue,
             node: node,
             selection: selection

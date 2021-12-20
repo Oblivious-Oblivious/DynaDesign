@@ -1,5 +1,5 @@
 //
-//  Pane+Drag.swift
+//  PaneView+Drag.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Pane {
+extension PaneView {
     private func process_node_translation(_ translation: CGSize) {
         guard !self.selection.dragging_nodes.isEmpty else { return };
         let scaled_translation = translation.scaled_down_to(self.zoom_scale);

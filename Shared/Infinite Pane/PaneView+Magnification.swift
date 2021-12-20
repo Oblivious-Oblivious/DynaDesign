@@ -1,5 +1,5 @@
 //
-//  Pane+Magnification.swift
+//  PaneView+Magnification.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -10,7 +10,7 @@ import SwiftUI
 let zoom_min_scale = CGFloat(0.05);
 let zoom_max_scale = CGFloat(4.0);
 
-extension Pane {
+extension PaneView {
     private func scaled_offset(_ scale: CGFloat, initial_value: CGPoint) -> CGPoint {
         return CGPoint(x: initial_value.x * scale, y: initial_value.y * scale);
     }
