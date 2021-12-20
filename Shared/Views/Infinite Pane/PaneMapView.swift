@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BlockMapView: View {
+struct PaneMapView: View {
     @ObservedObject var selection: SelectionHandler;
     @Binding var nodes: [Node];
 
@@ -28,7 +28,7 @@ struct BlockMapView: View {
     }
 }
 
-struct BlockMapView_Previews: PreviewProvider {
+struct PaneMapView_Previews: PreviewProvider {
     static let node1 = Node(
         id: NodeID(),
         position: CGPoint(x: -100, y: -30)
@@ -42,7 +42,7 @@ struct BlockMapView_Previews: PreviewProvider {
     static var previews: some View {
         let selection = SelectionHandler();
         
-        return BlockMapView(
+        return PaneMapView(
             selection: selection,
             nodes: $nodes
         );

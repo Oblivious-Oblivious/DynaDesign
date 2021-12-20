@@ -34,7 +34,7 @@ struct Pane: View {
                     .fill(self.pane_color)
                     .ignoresSafeArea();
                 
-                BlockMapView(
+                PaneMapView(
                     selection: self.selection,
                     nodes: self.$mesh.nodes
                 )
