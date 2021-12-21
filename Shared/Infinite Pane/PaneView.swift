@@ -9,8 +9,12 @@ import SwiftUI
 
 struct PaneView: View {
     @ObservedObject var mesh: MeshController;
-    @ObservedObject var selection: SelectionController;
+    /* Zooming */
+    @Binding var zoom_scale: CGFloat;
     @State var pane_color: Color;
+    
+    /* Selection */
+    var selection = SelectionController();
     
     /* Dragging */
     @State var portal_position = CGPoint.zero;
@@ -19,9 +23,6 @@ struct PaneView: View {
     /* PaneView+Drag */
     @State var is_dragging = false;
     @State var is_dragging_mesh = false;
-    
-    /* Zooming */
-    @State var zoom_scale = CGFloat(1.0);
     
     /* PaneView+Magnification */
     @State var current_zoom_scale: CGFloat?;
@@ -54,14 +55,13 @@ struct PaneView: View {
 }
 
 struct Pane_Previews: PreviewProvider {
+    @State static var zoom_scale: CGFloat = 100;
+
     static var previews: some View {
-        let mesh = MeshController.sample_mesh();
-        let selection = SelectionController();
-        
         return PaneView(
-            mesh: mesh,
-            selection: selection,
+            mesh: MeshController.sample_mesh(),
+            zoom_scale: $zoom_scale,
             pane_color: Color("PaneColor")
-        );
+        )
     }
 }
