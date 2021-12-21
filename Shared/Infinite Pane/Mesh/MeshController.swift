@@ -8,7 +8,6 @@
 import SwiftUI
 
 class MeshController: ObservableObject {
-    let root_node_id: NodeID;
     @Published var nodes: [NodeModel] = [];
     
     private func replace(_ node: NodeModel, with replacement: NodeModel) {
@@ -23,12 +22,6 @@ class MeshController: ObservableObject {
         var moved_node = node;
         moved_node.position = position;
         replace(node, with: moved_node);
-    }
-    
-    init() {
-        let root = NodeModel();
-        self.root_node_id = root.id;
-        nodes.append(root);
     }
     
     func add_node(at point: CGPoint) {

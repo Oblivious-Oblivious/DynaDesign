@@ -11,8 +11,8 @@ extension MeshController {
     static func sample_mesh() -> MeshController {
         let mesh = MeshController();
 
-        [50, 100, 150].forEach { angle in
-            mesh.add_node(at: CGPoint(x: angle, y: angle));
+        [0, 50, 100, 150].forEach { pos in
+            mesh.add_node(at: CGPoint(x: pos, y: pos));
         }
 
         return mesh;

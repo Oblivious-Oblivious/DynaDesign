@@ -40,10 +40,8 @@ struct PaneMapView_Previews: PreviewProvider {
     @State static var nodes = [node1, node2];
 
     static var previews: some View {
-        let selection = SelectionController();
-        
         return PaneMapView(
-            selection: selection,
+            selection: SelectionController(),
             nodes: $nodes
         );
     }
