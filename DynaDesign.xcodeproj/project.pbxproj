@@ -11,6 +11,8 @@
 		763F3BC527715646004274BA /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F3BC427715646004274BA /* BackButton.swift */; };
 		763F3BC827717509004274BA /* SettingsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F3BC727717509004274BA /* SettingsBar.swift */; };
 		763F3BCC277196A5004274BA /* ProjectMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F3BCB277196A5004274BA /* ProjectMenu.swift */; };
+		764528A227726884003C5156 /* ModifierButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764528A127726884003C5156 /* ModifierButton.swift */; };
+		764E2878277A78F500F0B9B7 /* ModifierButton+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E2877277A78F400F0B9B7 /* ModifierButton+Tap.swift */; };
 		766B3C5D2762FEE500E41C9D /* DynaDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */; };
 		766B3C5F2762FEE500E41C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4E2762FEE300E41C9D /* ContentView.swift */; };
 		766B3C612762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		763F3BC427715646004274BA /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		763F3BC727717509004274BA /* SettingsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBar.swift; sourceTree = "<group>"; };
 		763F3BCB277196A5004274BA /* ProjectMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMenu.swift; sourceTree = "<group>"; };
+		764528A127726884003C5156 /* ModifierButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierButton.swift; sourceTree = "<group>"; };
+		764E2877277A78F400F0B9B7 /* ModifierButton+Tap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModifierButton+Tap.swift"; sourceTree = "<group>"; };
 		766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynaDesignApp.swift; sourceTree = "<group>"; };
 		766B3C4E2762FEE300E41C9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		766B3C4F2762FEE500E41C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			children = (
 				763F3BC427715646004274BA /* BackButton.swift */,
 				763F3BC727717509004274BA /* SettingsBar.swift */,
+				764528A127726884003C5156 /* ModifierButton.swift */,
+				764E2877277A78F400F0B9B7 /* ModifierButton+Tap.swift */,
 			);
 			path = "Menu Items";
 			sourceTree = "<group>";
@@ -295,11 +301,13 @@
 				76A3600D2770544E00E833A7 /* GridItemView.swift in Sources */,
 				76A3600A27704E2300E833A7 /* GridView.swift in Sources */,
 				763F3BC327713907004274BA /* ProjectView.swift in Sources */,
+				764E2878277A78F500F0B9B7 /* ModifierButton+Tap.swift in Sources */,
 				766B3CA12763B46100E41C9D /* PaneMapView.swift in Sources */,
 				76A0346C2770382200BE610E /* SignInPageView.swift in Sources */,
 				766B3C882763B07E00E41C9D /* MeshController.swift in Sources */,
 				766B3C9D2763B36D00E41C9D /* Int+Radians.swift in Sources */,
 				76A360152771185D00E833A7 /* GridOptions.swift in Sources */,
+				764528A227726884003C5156 /* ModifierButton.swift in Sources */,
 				766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
 				763F3BCC277196A5004274BA /* ProjectMenu.swift in Sources */,
 				766B3C8E2763B0EF00E41C9D /* NodeModel.swift in Sources */,
@@ -425,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DynaDesign (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R25Q8NQQ3;
@@ -444,6 +453,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oblivious.DynaDesign;
 				PRODUCT_NAME = DynaDesign;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DynaDesign (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R25Q8NQQ3;
@@ -474,6 +486,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oblivious.DynaDesign;
 				PRODUCT_NAME = DynaDesign;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
