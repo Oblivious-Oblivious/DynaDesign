@@ -20,16 +20,14 @@ struct SettingsBar: View {
                 .foregroundColor(.indigo)
             
             /* Share Button */
-            RoundedRectangle(cornerRadius: 8)
-                .frame(width: 50, height: 30)
-                .foregroundColor(.purple)
-                .offset(x: -108)
             Button(action: {}) {
                 Text("Share")
             }
-            .frame(width: 50, height: 25)
+            .frame(width: 55, height: 35)
+            .background(.purple)
             .foregroundColor(.white)
-            .offset(x: -108)
+            .cornerRadius(8)
+            .offset(x: -105)
             
             /* Zoom Percentage */
             Text("Zoom: \(Int(zoom_scale * 100))%")
@@ -37,15 +35,13 @@ struct SettingsBar: View {
                 .offset(x: 8)
             
             /* Settings Gear */
-            RoundedRectangle(cornerRadius: 8)
-                .frame(width: 30, height: 30)
-                .foregroundColor(.purple)
-                .offset(x: 115)
-            Button(action: {
-            }) {
+            Button(action: {}) {
                 Image(systemName: "gear")
             }
+            .frame(width: 35, height: 35)
+            .background(.purple)
             .foregroundColor(.white)
+            .cornerRadius(8)
             .offset(x: 115)
         }
     }
