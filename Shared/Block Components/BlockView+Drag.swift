@@ -17,7 +17,7 @@ extension BlockView {
     }
     
     func drag_gesture_animation() -> some Gesture {
-        DragGesture()
+        DragGesture(minimumDistance: 0)
             .onChanged({ value in
                 withAnimation(.easeInOut(duration: 0.33)) {
                     self.animate = true
