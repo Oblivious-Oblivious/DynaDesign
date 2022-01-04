@@ -12,20 +12,20 @@ struct BackButton: View {
     
     @State var width: CGFloat;
     @State var height: CGFloat;
+    
+    /* BackButton+Tap */
+    @State var is_pressed: Bool = false;
 
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8)
-                .frame(width: width, height: height)
                 .foregroundColor(.indigo)
-
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss();
-            }) {
-                Image(systemName: "arrow.backward")
-            }
-            .foregroundColor(.white)
+            Image(systemName: "arrow.backward")
+                .foregroundColor(.white)
         }
+        .frame(width: width, height: height)
+        .opacity(opacity_amount())
+        .gesture(button_animation());
     }
 }
 
