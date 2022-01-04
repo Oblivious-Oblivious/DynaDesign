@@ -11,35 +11,33 @@ import WaterfallGrid
 struct GridView: View {
     @State var projects_list: [ProjectModel];
     
-    @State private var portrait_columns: Int = 3;
-    @State private var landscape_columns: Int = 4;
-    @State private var grid_spacing: CGFloat = 16;
+    private let grid_spacing: CGFloat = 16;
+    private let columns: [GridItem] = [
+        GridItem(),
+        GridItem(),
+        GridItem(),
+        GridItem(),
+    ];
 
     var body: some View {
         GeometryReader { geo in
             NavigationView {
                 ScrollView(.vertical, showsIndicators: false) {
-                    WaterfallGrid(projects_list) { project in
-                        NavigationLink(
-                            destination: ProjectView(project: project)
-                        ) {
-                            /// TODO Figure out dynamic sizing
-                            GridItemView(size: (geo.size.width / CGFloat(landscape_columns)) - grid_spacing)
+                    LazyVGrid(columns: columns) {
+                        ForEach(projects_list) { project in
+                            NavigationLink(destination: ProjectView(project: project)) {
+                                Text("Block")
+                                    .frame(
+                                        width: (geo.size.width / CGFloat(columns.count)) - grid_spacing,
+                                        height: 1.5 * (geo.size.width / CGFloat(columns.count)) - grid_spacing
+                                    )
+                                    .foregroundColor(.yellow)
+                                    .background(.gray)
+                                    .cornerRadius(20)
+                            }
                         }
                     }
-                    .gridStyle(
-                        columnsInPortrait: portrait_columns,
-                        columnsInLandscape: landscape_columns,
-                        spacing: grid_spacing,
-                        animation: .easeInOut(duration: 0.5)
-                    )
-                    .scrollOptions(direction: .vertical)
-                    .padding(EdgeInsets(
-                        top: grid_spacing,
-                        leading: grid_spacing,
-                        bottom: grid_spacing,
-                        trailing: grid_spacing
-                    ))
+                    .padding(grid_spacing)
                 }
                 .navigationTitle("Projects")
             }
