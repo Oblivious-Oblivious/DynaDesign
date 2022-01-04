@@ -9,10 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        GridView(
-            projects_list: ProjectModel.sample_list(),
-            options: GridOptions()
-        );
+        GridView(projects_list: ProjectModel.sample_list());
     }
 }
 

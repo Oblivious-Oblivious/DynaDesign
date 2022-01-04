@@ -10,7 +10,10 @@ import WaterfallGrid
 
 struct GridView: View {
     @State var projects_list: [ProjectModel];
-    @State var options: GridOptions;
+    
+    @State private var portrait_columns: Int = 3;
+    @State private var landscape_columns: Int = 4;
+    @State private var grid_spacing: CGFloat = 16;
 
     var body: some View {
         GeometryReader { geo in
@@ -21,23 +24,21 @@ struct GridView: View {
                             destination: ProjectView(project: project)
                         ) {
                             /// TODO Figure out dynamic sizing
-                            GridItemView(
-                                size: (geo.size.width / CGFloat(options.landscape_columns)) - options.grid_spacing
-                            )
+                            GridItemView(size: (geo.size.width / CGFloat(landscape_columns)) - grid_spacing)
                         }
                     }
                     .gridStyle(
-                        columnsInPortrait: options.portrait_columns,
-                        columnsInLandscape: options.landscape_columns,
-                        spacing: options.grid_spacing,
+                        columnsInPortrait: portrait_columns,
+                        columnsInLandscape: landscape_columns,
+                        spacing: grid_spacing,
                         animation: .easeInOut(duration: 0.5)
                     )
                     .scrollOptions(direction: .vertical)
                     .padding(EdgeInsets(
-                        top: options.grid_spacing,
-                        leading: options.grid_spacing,
-                        bottom: options.grid_spacing,
-                        trailing: options.grid_spacing
+                        top: grid_spacing,
+                        leading: grid_spacing,
+                        bottom: grid_spacing,
+                        trailing: grid_spacing
                     ))
                 }
                 .navigationTitle("Projects")
@@ -49,15 +50,9 @@ struct GridView: View {
 
 struct ProjectsGrid_Previews: PreviewProvider {
     static var previews: some View {
-        GridView(
-            projects_list: ProjectModel.sample_list(),
-            options: GridOptions()
-        )
-        .previewInterfaceOrientation(.landscapeLeft);
+        GridView(projects_list: ProjectModel.sample_list())
+            .previewInterfaceOrientation(.landscapeLeft)
         
-        GridView(
-            projects_list: ProjectModel.sample_list(),
-            options: GridOptions()
-        )
+        GridView(projects_list: ProjectModel.sample_list())
     }
 }

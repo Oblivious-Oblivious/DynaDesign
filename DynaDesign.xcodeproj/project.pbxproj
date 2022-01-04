@@ -35,7 +35,6 @@
 		76A3600D2770544E00E833A7 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3600C2770544E00E833A7 /* GridItemView.swift */; };
 		76A360112770F75A00E833A7 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A360102770F75A00E833A7 /* ProjectModel.swift */; };
 		76A360132770F82E00E833A7 /* ProjectModel+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */; };
-		76A360152771185D00E833A7 /* GridOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A360142771185D00E833A7 /* GridOptions.swift */; };
 		76A3601C27712E3E00E833A7 /* ____View+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3601B27712E3E00E833A7 /* ____View+Orientation.swift */; };
 		76BE10942783F0900024F526 /* BackButton+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE10932783F0900024F526 /* BackButton+Tap.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		76A3600C2770544E00E833A7 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		76A360102770F75A00E833A7 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProjectModel+Demo.swift"; sourceTree = "<group>"; };
-		76A360142771185D00E833A7 /* GridOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOptions.swift; sourceTree = "<group>"; };
 		76A3601B27712E3E00E833A7 /* ____View+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____View+Orientation.swift"; sourceTree = "<group>"; };
 		76BE10932783F0900024F526 /* BackButton+Tap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackButton+Tap.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,7 +193,6 @@
 		76A3601927711F3600E833A7 /* Project Grid */ = {
 			isa = PBXGroup;
 			children = (
-				76A360142771185D00E833A7 /* GridOptions.swift */,
 				76A3600C2770544E00E833A7 /* GridItemView.swift */,
 				76A3600927704E2300E833A7 /* GridView.swift */,
 				76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */,
@@ -310,7 +307,6 @@
 				76A0346C2770382200BE610E /* SignInPageView.swift in Sources */,
 				766B3C882763B07E00E41C9D /* MeshController.swift in Sources */,
 				766B3C9D2763B36D00E41C9D /* Int+Radians.swift in Sources */,
-				76A360152771185D00E833A7 /* GridOptions.swift in Sources */,
 				764528A227726884003C5156 /* ModifierButton.swift in Sources */,
 				766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
 				763F3BCC277196A5004274BA /* ProjectMenu.swift in Sources */,
