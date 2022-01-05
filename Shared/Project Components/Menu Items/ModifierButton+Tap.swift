@@ -19,11 +19,9 @@ extension ModifierButton {
     func tap_gesture_animation() -> some Gesture {
         DragGesture(minimumDistance: 0)
             .onChanged({ _ in
-                withAnimation(.easeInOut(duration: 0.33)) {
-                    /* Execute custom action */
-                    action_fn();
-                    self.is_pressed = true
-                }
+                /* Execute custom action */
+                action_fn();
+                self.is_pressed = true
             })
             .onEnded({ _ in
                 withAnimation(.easeInOut(duration: 0.33)) {
