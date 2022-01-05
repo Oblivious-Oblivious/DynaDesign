@@ -66,30 +66,6 @@ struct ProjectMenu: View {
     }
 }
 
-//struct ModButtonList: View {
-//    private var tup: [(String, () -> ())] = [
-//        ("Move Pane", {}),
-//        ("Connect", {}),
-//        ("Hover", {})
-//    ];
-//    var size: CGFloat;
-//    var geo: GeometryProxy;
-//
-//    var body: some View {
-//        ForEach(0..<tup.count) { i in
-//            ModifierButton(
-//                button_text: tup[i].0,
-//                size: size,
-//                action_fn: tup[i].1
-//            )
-//            .offset(
-//                x: -(self.size / 3),
-//                y: CGFloat(i+1) * (geo.size.height / tup.count + 1) - 65
-//            )
-//        }
-//    }
-//}
-
 struct ProjectMenu_Previews: PreviewProvider {
     @State static var zoom_scale: CGFloat = 1;
 
