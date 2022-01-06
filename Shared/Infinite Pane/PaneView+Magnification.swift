@@ -8,7 +8,7 @@
 import SwiftUI
 
 let zoom_min_scale = CGFloat(0.05);
-let zoom_max_scale = CGFloat(4.0);
+let zoom_max_scale = CGFloat(16.0);
 
 extension PaneView {
     private func scaled_offset(_ scale: CGFloat, initial_value: CGPoint) -> CGPoint {
