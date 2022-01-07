@@ -1,5 +1,5 @@
 //
-//  NegationCircle.swift
+//  NegationBall.swift
 //  DynaDesign (iOS)
 //
 //  Created by Thanasis Papapostolou on 07/01/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private struct NegationCircleSymbol: Shape {
+private struct NegationBallSymbol: Shape {
     @State var size: CGFloat;
 
     func path(in rect: CGRect) -> Path {
@@ -28,12 +28,12 @@ private struct NegationCircleSymbol: Shape {
     }
 }
 
-struct NegationCircle: View {
+struct NegationBall: View {
     @State var size: CGFloat;
     @State var color: Color;
 
     var body: some View {
-        NegationCircleSymbol(size: size)
+        NegationBallSymbol(size: size)
             .stroke(lineWidth: 1)
             .foregroundColor(color)
     }
@@ -41,7 +41,7 @@ struct NegationCircle: View {
 
 struct NegationCircle_Previews: PreviewProvider {
     static var previews: some View {
-        NegationCircle(size: 200, color: .red)
+        NegationBall(size: 200, color: .red)
             .position(x: 0, y: 0)
     }
 }
