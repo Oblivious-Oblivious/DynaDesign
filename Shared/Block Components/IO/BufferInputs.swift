@@ -17,8 +17,8 @@ private struct BufferInputsSymbol: Shape {
             
             path.addLines([
                 CGPoint(x: -0.2 * width, y: (position-0.01) * height),
-                CGPoint(x: 0, y: (position-0.01) * height),
-                CGPoint(x: 0, y: (position+0.01) * height),
+                CGPoint(x: 0.2 * width, y: (position-0.01) * height),
+                CGPoint(x: 0.2 * width, y: (position+0.01) * height),
                 CGPoint(x: -0.2 * width, y: (position+0.01) * height)
             ]);
 
