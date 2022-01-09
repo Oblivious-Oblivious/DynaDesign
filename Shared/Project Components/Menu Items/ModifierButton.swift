@@ -37,8 +37,9 @@ struct ModifierButton_Previews: PreviewProvider {
     static var previews: some View {
         ModifierButton(
             button_text: "MOD",
-            size: 150,
-            action_fn: { print("Hello."); }
-        )
+            size: 150
+        ) {
+            print("Hello.");
+        }
     }
 }
