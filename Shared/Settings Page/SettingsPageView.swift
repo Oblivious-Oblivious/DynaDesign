@@ -22,7 +22,7 @@ struct SettingsPageView: View {
                     .foregroundColor(Color("TextColor"))
             }
             
-            Toggle(isOn: $model_data.user_options.is_left_handed) {
+            Toggle(isOn: $model_data.user_options.is_left_handed.animation(.spring())) {
                 Text("Left Handed")
                     .foregroundColor(Color("TextColor"))
                     .bold();
