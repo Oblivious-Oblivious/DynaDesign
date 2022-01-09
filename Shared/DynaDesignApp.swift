@@ -19,7 +19,7 @@ struct DynaDesignApp: App {
         
         #if os(macOS)
 //            main_window.commands {
-//                LandmarkCommands();
+//                DynaDesignCommands();
 //            }
         #else
             main_window;
