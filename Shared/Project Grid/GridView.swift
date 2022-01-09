@@ -49,8 +49,5 @@ struct GridView: View {
 struct ProjectsGrid_Previews: PreviewProvider {
     static var previews: some View {
         GridView(projects_list: ProjectModel.sample_list())
-            .previewInterfaceOrientation(.landscapeLeft)
-        
-        GridView(projects_list: ProjectModel.sample_list())
     }
 }
