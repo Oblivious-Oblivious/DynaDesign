@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct DynaDesignApp: App {
+    @StateObject private var model_data = ModelData();
+
     var body: some Scene {
-        WindowGroup {
+        let main_window = WindowGroup {
             ContentView()
+                .environmentObject(model_data);
         }
+        
+        #if os(macOS)
+//            main_window.commands {
+//                LandmarkCommands();
+//            }
+        #else
+            main_window;
+        #endif
     }
 }
