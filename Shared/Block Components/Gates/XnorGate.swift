@@ -21,7 +21,7 @@ struct XnorGate: View {
                 
                 XorExtraBar().fill(color).offset(x: -0.075 * size);
                 XorGateSymbol().fill(color);
-                GateText(gate_text: "XOR", size: size, color: .white);
+                GateText(gate_text: "XNOR", size: size, color: .white);
             }
             .offset(x: 0.075 * size);
         }
