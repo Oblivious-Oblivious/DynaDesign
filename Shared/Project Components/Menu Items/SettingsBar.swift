@@ -11,6 +11,8 @@ struct SettingsBar: View {
     @State var width: CGFloat;
     @State var height: CGFloat;
     @Binding var zoom_scale: CGFloat;
+    
+    @State var is_showing_settings = false;
 
     var body: some View {
         ZStack {
@@ -35,8 +37,13 @@ struct SettingsBar: View {
                 .offset(x: 8)
             
             /* Settings Gear */
-            Button(action: {}) {
+            Button(action: {
+                self.is_showing_settings.toggle();
+            }) {
                 Image(systemName: "gear")
+            }
+            .sheet(isPresented: $is_showing_settings) {
+                SettingsPageView()
             }
             .frame(width: 35, height: 35)
             .background(.purple)
