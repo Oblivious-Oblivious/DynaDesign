@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct PaneView: View {
-    @ObservedObject var mesh: MeshController;
+    @EnvironmentObject var model_data: ModelData;
+
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
     @State var pane_color: Color;
-    
-    /* Selection */
-    var selection = SelectionController();
     
     /* Dragging */
     @State var portal_position = CGPoint.zero;
@@ -35,18 +33,15 @@ struct PaneView: View {
                     .fill(self.pane_color)
                     .ignoresSafeArea();
                 
-                PaneMapView(
-                    selection: self.selection,
-                    nodes: self.$mesh.nodes
-                )
-                /* Follow the zoom event */
-                .scaleEffect(self.zoom_scale)
-                
-                /* Follow the position drag event */
-                .offset(
-                    x: self.portal_position.x + self.drag_offset.width,
-                    y: self.portal_position.y + self.drag_offset.height
-                )
+                PaneMapView()
+                    /* Follow the zoom event */
+                    .scaleEffect(self.zoom_scale)
+                    
+                    /* Follow the position drag event */
+                    .offset(
+                        x: self.portal_position.x + self.drag_offset.width,
+                        y: self.portal_position.y + self.drag_offset.height
+                    )
             }
             .gesture(pane_drag_gesture(on: pane))
             .gesture(pane_magnification_gesture());
@@ -59,9 +54,9 @@ struct Pane_Previews: PreviewProvider {
 
     static var previews: some View {
         return PaneView(
-            mesh: MeshController.sample_mesh(),
             zoom_scale: $zoom_scale,
             pane_color: Color("PaneColor")
         )
+        .environmentObject(ModelData())
     }
 }

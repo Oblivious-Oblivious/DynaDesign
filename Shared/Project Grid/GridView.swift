@@ -9,27 +9,23 @@ import SwiftUI
 import WaterfallGrid
 
 struct GridView: View {
-    @State var projects_list: [ProjectModel];
-    
-    private let grid_spacing: CGFloat = 16;
-    private let columns: [GridItem] = [
-        GridItem(),
-        GridItem(),
-        GridItem(),
-        GridItem(),
-    ];
+    @EnvironmentObject var model_data: ModelData;
 
     var body: some View {
         GeometryReader { geo in
+            let width = geo.size.width;
+            let columns = model_data.grid_options.columns;
+            let grid_spacing = model_data.grid_options.grid_spacing;
+
             NavigationView {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: columns) {
-                        ForEach(projects_list) { project in
+                        ForEach(model_data.projects_list) { project in
                             NavigationLink(destination: ProjectView(project: project)) {
                                 Text("Block")
                                     .frame(
-                                        width: (geo.size.width / CGFloat(columns.count)) - grid_spacing,
-                                        height: 1.5 * (geo.size.width / CGFloat(columns.count)) - grid_spacing
+                                        width: (width / CGFloat(columns.count)) - grid_spacing,
+                                        height: 1.5 * (width / CGFloat(columns.count)) - grid_spacing
                                     )
                                     .foregroundColor(.yellow)
                                     .background(.gray)
@@ -48,6 +44,7 @@ struct GridView: View {
 
 struct ProjectsGrid_Previews: PreviewProvider {
     static var previews: some View {
-        GridView(projects_list: ProjectModel.sample_list())
+        GridView()
+            .environmentObject(ModelData());
     }
 }

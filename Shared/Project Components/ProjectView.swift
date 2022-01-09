@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ProjectView: View {
+    @EnvironmentObject var model_data: ModelData;
     @State var project: ProjectModel;
 
     var body: some View {
         ZStack {
-            ProjectMenu(zoom_scale: $project.zoom_scale)
+            ProjectMenu()
                 .zIndex(1);
 
             PaneView(
-                mesh: project.mesh,
-                zoom_scale: $project.zoom_scale,
+                zoom_scale: $model_data.project_menu_options.zoom_scale,
                 pane_color: Color("PaneColor")
             )
             .onAppear() {
@@ -36,9 +36,7 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project: ProjectModel(
-            mesh: MeshController.sample_mesh(),
-            zoom_scale: 1
-        ));
+        ProjectView(project: ProjectModel(mesh: MeshController.sample_mesh()))
+            .environmentObject(ModelData());
     }
 }

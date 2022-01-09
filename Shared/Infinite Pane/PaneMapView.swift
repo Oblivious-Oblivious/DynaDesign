@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct PaneMapView: View {
-    @ObservedObject var selection: SelectionController;
-    @Binding var nodes: [NodeModel];
+    @EnvironmentObject var model_data: ModelData;
 
     var body: some View {
         ZStack {
-            ForEach(nodes) { node in
+            ForEach(model_data.mesh.nodes) { node in
                 BlockView(
                     block_color: Color.indigo,
                     node: node,
-                    selection: selection
+                    selection: model_data.selection
                 )
                 .offset(
                     x: node.position.x,
@@ -29,20 +28,8 @@ struct PaneMapView: View {
 }
 
 struct PaneMapView_Previews: PreviewProvider {
-    static let node1 = NodeModel(
-        id: NodeID(),
-        position: CGPoint(x: -100, y: -30)
-    );
-    static let node2 = NodeModel(
-        id: NodeID(),
-        position: CGPoint(x: 100, y: 30)
-    );
-    @State static var nodes = [node1, node2];
-
     static var previews: some View {
-        return PaneMapView(
-            selection: SelectionController(),
-            nodes: $nodes
-        );
+        return PaneMapView()
+            .environmentObject(ModelData());
     }
 }
