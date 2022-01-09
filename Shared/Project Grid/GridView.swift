@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WaterfallGrid
 
 struct GridView: View {
     @EnvironmentObject var model_data: ModelData;
@@ -36,6 +35,17 @@ struct GridView: View {
                     .padding(grid_spacing)
                 }
                 .navigationTitle("Projects")
+                .toolbar {
+                    ToolbarItem(placement: .primaryAction) {
+                        Button(
+                            action: {},
+                            label: {
+                                Image(systemName: "magnifyingglass")
+                                    .foregroundColor(Color("TextColor"))
+                            }
+                        )
+                    }
+                }
             }
             .navigationViewStyle(StackNavigationViewStyle())
         }
