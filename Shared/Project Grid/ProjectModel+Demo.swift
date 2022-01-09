@@ -10,78 +10,24 @@ import SwiftUI
 extension ProjectModel {
     static func sample_list() -> [ProjectModel] {
         return [
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            ),
-            ProjectModel(
-                mesh: MeshController.sample_mesh(),
-                zoom_scale: CGFloat(1.0)
-            )
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh()),
+            ProjectModel(mesh: MeshController.sample_mesh())
         ];
     }
 }

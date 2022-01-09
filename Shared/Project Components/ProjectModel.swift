@@ -10,5 +10,4 @@ import SwiftUI
 struct ProjectModel: Identifiable {
     var id = UUID();
     var mesh: MeshController;
-    var zoom_scale: CGFloat;
 }
