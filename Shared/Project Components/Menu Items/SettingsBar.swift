@@ -23,7 +23,7 @@ struct SettingsBar: View {
             
             /* Share Button */
             Button(action: {}) {
-                Text("Share")
+                Text("Save")
             }
             .frame(width: 55, height: 35)
             .background(.purple)
