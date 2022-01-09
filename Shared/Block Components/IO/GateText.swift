@@ -15,7 +15,7 @@ struct GateText: View {
     var body: some View {
         Text(gate_text)
             .foregroundColor(color)
-            .font(.caption)
+            .font(.custom("size9", size: 9))
             .position(x: 0.4 * size, y: 0.5 * size)
     }
 }
