@@ -26,6 +26,7 @@
 		764E2878277A78F500F0B9B7 /* ModifierButton+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E2877277A78F400F0B9B7 /* ModifierButton+Tap.swift */; };
 		765652C8278A821E00D9D591 /* ProjectSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765652C7278A821E00D9D591 /* ProjectSettingsModel.swift */; };
 		765652CA278A84B600D9D591 /* GridSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765652C9278A84B600D9D591 /* GridSettingsModel.swift */; };
+		765652CC278ADB8400D9D591 /* ProjectMenu+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765652CB278ADB8400D9D591 /* ProjectMenu+Position.swift */; };
 		766B3C5D2762FEE500E41C9D /* DynaDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */; };
 		766B3C5F2762FEE500E41C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4E2762FEE300E41C9D /* ContentView.swift */; };
 		766B3C612762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		764E2877277A78F400F0B9B7 /* ModifierButton+Tap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModifierButton+Tap.swift"; sourceTree = "<group>"; };
 		765652C7278A821E00D9D591 /* ProjectSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsModel.swift; sourceTree = "<group>"; };
 		765652C9278A84B600D9D591 /* GridSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSettingsModel.swift; sourceTree = "<group>"; };
+		765652CB278ADB8400D9D591 /* ProjectMenu+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProjectMenu+Position.swift"; sourceTree = "<group>"; };
 		766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynaDesignApp.swift; sourceTree = "<group>"; };
 		766B3C4E2762FEE300E41C9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		766B3C4F2762FEE500E41C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				763F3BC9277181CB004274BA /* Menu Items */,
 				763F3BCB277196A5004274BA /* ProjectMenu.swift */,
+				765652CB278ADB8400D9D591 /* ProjectMenu+Position.swift */,
 				76A360102770F75A00E833A7 /* ProjectModel.swift */,
 				765652C7278A821E00D9D591 /* ProjectSettingsModel.swift */,
 				763F3BC227713906004274BA /* ProjectView.swift */,
@@ -358,6 +361,7 @@
 				761EE3F62787F39900EDF21A /* NorGate.swift in Sources */,
 				763F3BC827717509004274BA /* SettingsBar.swift in Sources */,
 				761EE4002788208300EDF21A /* XnorGate.swift in Sources */,
+				765652CC278ADB8400D9D591 /* ProjectMenu+Position.swift in Sources */,
 				761EE3FE27881C7600EDF21A /* XorGate.swift in Sources */,
 				7689EF7E2786B26F006806F3 /* OrGate.swift in Sources */,
 				766B3CAA2763BF3400E41C9D /* PaneView+Drag.swift in Sources */,

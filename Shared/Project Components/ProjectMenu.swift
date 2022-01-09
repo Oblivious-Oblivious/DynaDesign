@@ -35,7 +35,7 @@ struct ProjectMenu: View {
                 height: menu_height
             )
             .offset(
-                x: width - back_button_width - (menu_height / 2),
+                x: get_back_button_position(width),
                 y: menu_height / 2
             )
 
@@ -44,7 +44,7 @@ struct ProjectMenu: View {
                 size: mod_button_size
             ) {}
             .offset(
-                x: menu_height / 2,
+                x: get_modifier_position(width),
                 y: 1 * (height / (number_of_mod_buttons + 1)) - (0.01 * mod_button_size * menu_height)
             )
             ModifierButton(
@@ -52,7 +52,7 @@ struct ProjectMenu: View {
                 size: mod_button_size
             ) {}
             .offset(
-                x: menu_height / 2,
+                x: get_modifier_position(width),
                 y: 2 * (height / (number_of_mod_buttons + 1)) - (0.01 * mod_button_size * menu_height)
             )
             ModifierButton(
@@ -60,7 +60,7 @@ struct ProjectMenu: View {
                 size: mod_button_size
             ) {}
             .offset(
-                x: menu_height / 2,
+                x: get_modifier_position(width),
                 y: 3 * (height / (number_of_mod_buttons + 1)) - (0.01 * mod_button_size * menu_height)
             )
         }
