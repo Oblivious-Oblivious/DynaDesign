@@ -20,21 +20,9 @@ struct BlockView: View {
     @State var animate = false;
 
     var body: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .fill(self.block_color)
-            .frame(
-                width: 50,
-                height: 50,
-                alignment: .center
-            )
+        XnorGate(size: 50, color: self.block_color)
             .scaleEffect(scale_amount())
             .opacity(opacity_amount())
-            .shadow(
-                color: self.block_color.opacity(0.66),
-                radius: self.animate ? 20 : 10,
-                x: 0,
-                y: self.animate ? 22 : 12
-            )
             .position(self.position)
             .gesture(drag_gesture_animation());
     }
@@ -42,13 +30,10 @@ struct BlockView: View {
 
 struct Block_Previews: PreviewProvider {
     static var previews: some View {
-        let selection = SelectionController();
-        let node = NodeModel();
-
         BlockView(
             block_color: Color.blue,
-            node: node,
-            selection: selection
+            node: NodeModel(),
+            selection: SelectionController()
         );
     }
 }

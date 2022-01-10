@@ -114,6 +114,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76062F03278C1F13002057FA /* Edges */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Edges;
+			sourceTree = "<group>";
+		};
 		761EE3F32787F21A00EDF21A /* Gates */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +192,8 @@
 		766B3C4C2762FEE300E41C9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				766B3C9F2763B44400E41C9D /* Block Components */,
+				766B3C9F2763B44400E41C9D /* Blocks */,
+				76062F03278C1F13002057FA /* Edges */,
 				76A3601627711DF500E833A7 /* Infinite Pane */,
 				76A3601827711F0800E833A7 /* Node Selection */,
 				763F3BCA27718532004274BA /* Project Components */,
@@ -209,7 +217,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		766B3C9F2763B44400E41C9D /* Block Components */ = {
+		766B3C9F2763B44400E41C9D /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
 				761EE3F42787F22300EDF21A /* IO */,
@@ -217,7 +225,7 @@
 				766B3CA32763B6A800E41C9D /* BlockView.swift */,
 				766B3CB22763C31200E41C9D /* BlockView+Drag.swift */,
 			);
-			path = "Block Components";
+			path = Blocks;
 			sourceTree = "<group>";
 		};
 		766B3CB52763C45200E41C9D /* SwiftUI Internals */ = {
@@ -232,8 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				76A3601727711ECE00E833A7 /* Mesh */,
-				766B3C812763AEE600E41C9D /* PaneView.swift */,
 				766B3CA02763B46100E41C9D /* PaneMapView.swift */,
+				766B3C812763AEE600E41C9D /* PaneView.swift */,
 				766B3CA92763BF3400E41C9D /* PaneView+Drag.swift */,
 				766B3CA62763BDD400E41C9D /* PaneView+Magnification.swift */,
 			);
