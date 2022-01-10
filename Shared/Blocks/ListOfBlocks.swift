@@ -1,5 +1,5 @@
 //
-//  BlockMapView.swift
+//  ListOfBlocks.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PaneMapView: View {
+struct ListOfBlocks: View {
     @EnvironmentObject var model_data: ModelData;
 
     var body: some View {
@@ -29,7 +29,7 @@ struct PaneMapView: View {
 
 struct PaneMapView_Previews: PreviewProvider {
     static var previews: some View {
-        return PaneMapView()
+        return ListOfBlocks()
             .environmentObject(ModelData());
     }
 }
