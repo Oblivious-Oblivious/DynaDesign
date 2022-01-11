@@ -8,9 +8,9 @@
 import SwiftUI
 
 class MeshController: ObservableObject {
-    @Published var nodes: [NodeModel] = [];
+    @Published var nodes: [BlockModel] = [];
     
-    private func replace(_ node: NodeModel, with replacement: NodeModel) {
+    private func replace(_ node: BlockModel, with replacement: BlockModel) {
         var new_set = self.nodes.filter {
             $0.id != node.id;
         };
@@ -18,18 +18,18 @@ class MeshController: ObservableObject {
         self.nodes = new_set;
     }
     
-    private func position_node(_ node: NodeModel, position: CGPoint) {
+    private func position_node(_ node: BlockModel, position: CGPoint) {
         var moved_node = node;
         moved_node.position = position;
         replace(node, with: moved_node);
     }
     
     func add_node(at point: CGPoint) {
-        let node = NodeModel(position: point);
+        let node = BlockModel(position: point);
         nodes.append(node);
     }
     
-    func node_with_id(_ node_id: NodeID) -> NodeModel? {
+    func node_with_id(_ node_id: BlockID) -> BlockModel? {
         return self.nodes.filter({
             $0.id == node_id;
         }).first;

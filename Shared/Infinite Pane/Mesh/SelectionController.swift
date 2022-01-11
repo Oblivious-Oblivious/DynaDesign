@@ -9,9 +9,9 @@ import SwiftUI
 
 class SelectionController: ObservableObject {
     @Published var dragging_nodes: [DragModel] = [];
-    @Published private(set) var selected_node_ids: [NodeID] = [];
+    @Published private(set) var selected_node_ids: [BlockID] = [];
     
-    private func selected_nodes(in mesh: MeshController) -> [NodeModel] {
+    private func selected_nodes(in mesh: MeshController) -> [BlockModel] {
         return self.selected_node_ids.compactMap {
             mesh.node_with_id($0);
         };

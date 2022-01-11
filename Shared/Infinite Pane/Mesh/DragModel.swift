@@ -8,6 +8,6 @@
 import SwiftUI
 
 struct DragModel {
-    var id: NodeID;
+    var id: BlockID;
     var original_position: CGPoint;
 }
