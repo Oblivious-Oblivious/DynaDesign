@@ -9,12 +9,12 @@ import SwiftUI
 
 extension PaneView {
     private func process_node_translation(_ translation: CGSize) {
-        guard !model_data.selection.dragging_nodes.isEmpty else { return };
+        guard !model_data.selection.dragging_blocks.isEmpty else { return };
         let scaled_translation = translation.scaled_down_to(self.zoom_scale);
         
-        model_data.mesh.process_node_translation(
+        model_data.mesh.process_block_translation(
             scaled_translation,
-            nodes: model_data.selection.dragging_nodes
+            blocks: model_data.selection.dragging_blocks
         );
     }
 

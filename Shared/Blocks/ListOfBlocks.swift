@@ -12,7 +12,7 @@ struct ListOfBlocks: View {
 
     var body: some View {
         ZStack {
-            ForEach(model_data.mesh.nodes) { node in
+            ForEach(model_data.mesh.blocks) { node in
                 BlockView(
                     block_color: Color.indigo,
                     node: node,

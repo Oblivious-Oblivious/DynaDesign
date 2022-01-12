@@ -12,7 +12,7 @@ extension MeshController {
         let mesh = MeshController();
 
         [0, 50, 100, 150].forEach { pos in
-            mesh.add_node(at: CGPoint(x: pos, y: pos));
+            mesh.add_block(at: CGPoint(x: pos, y: pos));
         }
 
         return mesh;

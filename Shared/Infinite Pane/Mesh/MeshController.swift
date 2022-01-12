@@ -8,44 +8,43 @@
 import SwiftUI
 
 class MeshController: ObservableObject {
-    @Published var nodes: [BlockModel] = [];
+    @Published var blocks: [BlockModel] = [];
     
     static let `default` = MeshController.sample_mesh();
     
-    private func replace(_ node: BlockModel, with replacement: BlockModel) {
-        var new_set = self.nodes.filter {
-            $0.id != node.id;
+    private func replace(_ block: BlockModel, with replacement: BlockModel) {
+        var new_set = self.blocks.filter {
+            $0.id != block.id;
         };
         new_set.append(replacement);
-        self.nodes = new_set;
+        self.blocks = new_set;
     }
     
-    private func position_node(_ node: BlockModel, position: CGPoint) {
-        var moved_node = node;
-        moved_node.position = position;
-        replace(node, with: moved_node);
+    private func position_block(_ block: BlockModel, position: CGPoint) {
+        var moved_block = block;
+        moved_block.position = position;
+        replace(block, with: moved_block);
     }
     
-    func add_node(at point: CGPoint) {
-        let node = BlockModel(position: point);
-        nodes.append(node);
+    func add_block(at point: CGPoint) {
+        blocks.append(BlockModel(position: point));
     }
     
-    func node_with_id(_ node_id: BlockID) -> BlockModel? {
-        return self.nodes.filter({
-            $0.id == node_id;
+    func block_with_id(_ block_id: BlockID) -> BlockModel? {
+        return self.blocks.filter({
+            $0.id == block_id;
         }).first;
     }
 
-    func process_node_translation(_ translation: CGSize, nodes: [DragModel]) {
-        nodes.forEach { draginfo in
-            if let node = node_with_id(draginfo.id) {
+    func process_block_translation(_ translation: CGSize, blocks: [DragModel]) {
+        blocks.forEach { draginfo in
+            if let block = block_with_id(draginfo.id) {
                 let next_position = draginfo.original_position
                     .translated_by(
                         x: translation.width,
                         y: translation.height
                     );
-                position_node(node, position: next_position);
+                position_block(block, position: next_position);
             }
         }
     }
