@@ -10,4 +10,6 @@ import SwiftUI
 struct ProjectModel: Identifiable {
     var id = UUID();
     var mesh: MeshController;
+    
+    static let `default` = ProjectModel.sample_list();
 }

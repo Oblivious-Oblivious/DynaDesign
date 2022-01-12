@@ -10,6 +10,8 @@ import SwiftUI
 class MeshController: ObservableObject {
     @Published var nodes: [BlockModel] = [];
     
+    static let `default` = MeshController.sample_mesh();
+    
     private func replace(_ node: BlockModel, with replacement: BlockModel) {
         var new_set = self.nodes.filter {
             $0.id != node.id;
