@@ -14,6 +14,6 @@ final class ModelData: ObservableObject {
     @Published var project_menu_options = ProjectSettingsModel.default;
     @Published var user_options = SettingsModel.default;
     
+    /// TODO -> Use independent meshes for each project
     @ObservedObject var mesh = MeshController.default;
-    var selection = SelectionController();
 }

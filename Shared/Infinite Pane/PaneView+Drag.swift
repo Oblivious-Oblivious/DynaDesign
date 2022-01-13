@@ -8,16 +8,6 @@
 import SwiftUI
 
 extension PaneView {
-    private func process_node_translation(_ translation: CGSize) {
-        guard !model_data.selection.dragging_blocks.isEmpty else { return };
-        let scaled_translation = translation.scaled_down_to(self.zoom_scale);
-        
-        model_data.mesh.process_block_translation(
-            scaled_translation,
-            blocks: model_data.selection.dragging_blocks
-        );
-    }
-
     private func process_drag_change(_ value: DragGesture.Value, container_size: CGSize) {
         if !self.is_dragging {
             self.is_dragging = true;
@@ -26,9 +16,6 @@ extension PaneView {
         
         if self.is_dragging_mesh {
             drag_offset = value.translation;
-        }
-        else {
-            process_node_translation(value.translation);
         }
     }
     
@@ -41,10 +28,6 @@ extension PaneView {
                 x: portal_position.x + value.translation.width,
                 y: portal_position.y + value.translation.height
             );
-        }
-        else {
-            process_node_translation(value.translation);
-            model_data.selection.stop_dragging(model_data.mesh);
         }
     }
     

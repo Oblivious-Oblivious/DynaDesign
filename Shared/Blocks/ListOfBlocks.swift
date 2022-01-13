@@ -15,8 +15,7 @@ struct ListOfBlocks: View {
             ForEach(model_data.mesh.blocks) { node in
                 BlockView(
                     block_color: Color.indigo,
-                    node: node,
-                    selection: model_data.selection
+                    node: node
                 )
                 .offset(
                     x: node.position.x,
