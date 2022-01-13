@@ -9,8 +9,7 @@ import SwiftUI
 
 struct BlockView: View {
     var block_color: Color;
-    @State var node: NodeModel;
-    @ObservedObject var selection: SelectionController;
+    @State var node: BlockModel;
     
     /* Initially position mesh in the approximate center */
     @State var position = CGPoint(
@@ -32,8 +31,7 @@ struct Block_Previews: PreviewProvider {
     static var previews: some View {
         BlockView(
             block_color: Color.blue,
-            node: NodeModel(),
-            selection: SelectionController()
+            node: BlockModel()
         );
     }
 }
