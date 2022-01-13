@@ -8,7 +8,7 @@
 import SwiftUI
 
 let zoom_min_scale = CGFloat(0.05);
-let zoom_max_scale = CGFloat(16.0);
+let zoom_max_scale = CGFloat(10.0);
 
 extension PaneView {
     private func scaled_offset(_ scale: CGFloat, initial_value: CGPoint) -> CGPoint {
@@ -29,7 +29,7 @@ extension PaneView {
         self.zoom_scale = clamped.new_scale;
         
         /* Position to zoom towards */
-        if !clamped.did_clamp, let point = self.initial_portal_position {
+        if !clamped.did_clamp, let point = self.current_portal_position {
             self.portal_position = scaled_offset(value, initial_value: point);
         }
     }
@@ -40,7 +40,7 @@ extension PaneView {
                 withAnimation(.spring()) {
                     if self.current_zoom_scale == nil {
                         self.current_zoom_scale = self.zoom_scale;
-                        self.initial_portal_position = self.portal_position;
+                        self.current_portal_position = self.portal_position;
                     }
                     self.process_scale_change(value);
                 }
@@ -49,7 +49,7 @@ extension PaneView {
                 withAnimation(.spring()) {
                     self.process_scale_change(value);
                     self.current_zoom_scale = nil;
-                    self.initial_portal_position = nil;
+                    self.current_portal_position = nil;
                 }
             }
     }
