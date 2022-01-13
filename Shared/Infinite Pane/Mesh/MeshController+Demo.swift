@@ -10,10 +10,10 @@ import SwiftUI
 extension MeshController {
     static func sample_mesh() -> MeshController {
         let mesh = MeshController();
-
-        [0, 50, 100, 150].forEach { pos in
-            mesh.add_block(at: CGPoint(x: pos, y: pos));
-        }
+        
+        4.times { pos in
+            mesh.add_block(at: CGPoint(x: (pos+1) * 50, y: (pos+1) * 50));
+        };
 
         return mesh;
     }
