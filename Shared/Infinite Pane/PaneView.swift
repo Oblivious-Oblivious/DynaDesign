@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PaneView: View {
     @EnvironmentObject var model_data: ModelData;
-
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
     @State var mesh: MeshController;
@@ -25,7 +24,7 @@ struct PaneView: View {
     
     /* PaneView+Magnification */
     @State var current_zoom_scale: CGFloat?;
-    @State var initial_portal_position: CGPoint?;
+    @State var current_portal_position: CGPoint?;
     
     var body: some View {
         GeometryReader { pane in
