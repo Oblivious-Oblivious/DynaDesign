@@ -49,7 +49,7 @@ struct PaneView: View {
     }
 }
 
-struct Pane_Previews: PreviewProvider {
+struct PaneView_Previews: PreviewProvider {
     @State static var zoom_scale: CGFloat = 1;
 
     static var previews: some View {

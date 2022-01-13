@@ -39,7 +39,7 @@ struct NegationBall: View {
     }
 }
 
-struct NegationCircle_Previews: PreviewProvider {
+struct NegationBall_Previews: PreviewProvider {
     static var previews: some View {
         NegationBall(size: 200, color: .red)
             .position(x: 0, y: 0)
