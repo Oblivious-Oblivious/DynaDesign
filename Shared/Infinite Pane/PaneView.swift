@@ -12,6 +12,7 @@ struct PaneView: View {
 
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
+    @State var mesh: MeshController;
     @State var pane_color: Color;
     
     /* Dragging */
@@ -55,6 +56,7 @@ struct Pane_Previews: PreviewProvider {
     static var previews: some View {
         return PaneView(
             zoom_scale: $zoom_scale,
+            mesh: MeshController(),
             pane_color: Color("PaneColor")
         )
         .environmentObject(ModelData())

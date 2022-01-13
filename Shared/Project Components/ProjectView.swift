@@ -18,6 +18,7 @@ struct ProjectView: View {
 
             PaneView(
                 zoom_scale: $model_data.project_menu_options.zoom_scale,
+                mesh: project.mesh,
                 pane_color: Color("PaneColor")
             )
             .onAppear() {

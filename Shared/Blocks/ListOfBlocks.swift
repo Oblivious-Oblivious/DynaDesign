@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ListOfBlocks: View {
-    @EnvironmentObject var model_data: ModelData;
+    @State var mesh: MeshController;
 
     var body: some View {
         ZStack {
-            ForEach(model_data.mesh.blocks) { node in
+            ForEach(mesh.blocks) { node in
                 BlockView(
                     block_color: Color.indigo,
                     node: node
@@ -28,7 +28,6 @@ struct ListOfBlocks: View {
 
 struct PaneMapView_Previews: PreviewProvider {
     static var previews: some View {
-        return ListOfBlocks()
-            .environmentObject(ModelData());
+        return ListOfBlocks(mesh: MeshController())
     }
 }

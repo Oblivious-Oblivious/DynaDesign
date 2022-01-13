@@ -13,7 +13,4 @@ final class ModelData: ObservableObject {
     @Published var grid_options = GridSettingsModel.default;
     @Published var project_menu_options = ProjectSettingsModel.default;
     @Published var user_options = SettingsModel.default;
-    
-    /// TODO -> Use independent meshes for each project
-    @ObservedObject var mesh = MeshController.default;
 }
