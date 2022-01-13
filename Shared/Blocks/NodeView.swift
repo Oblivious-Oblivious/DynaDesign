@@ -1,5 +1,5 @@
 //
-//  BlockView.swift
+//  NodeView.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct BlockView: View {
+struct NodeView: View {
     var block_color: Color;
-    @State var node: BlockModel;
+    @State var node: NodeModel;
     
     /* Initially position mesh in the approximate center */
     @State var position = CGPoint(
@@ -27,11 +27,11 @@ struct BlockView: View {
     }
 }
 
-struct Block_Previews: PreviewProvider {
+struct NodeView_Previews: PreviewProvider {
     static var previews: some View {
-        BlockView(
+        NodeView(
             block_color: Color.blue,
-            node: BlockModel()
+            node: NodeModel()
         );
     }
 }

@@ -1,5 +1,5 @@
 //
-//  BlockView+Drag.swift
+//  NodeView+Drag.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension BlockView {
+extension NodeView {
     func scale_amount() -> CGFloat {
         self.animate ? 1.035 : 1.0;
     }

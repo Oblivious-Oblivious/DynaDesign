@@ -1,5 +1,5 @@
 //
-//  ListOfBlocks.swift
+//  ListOfNodes.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ListOfBlocks: View {
+struct ListOfNodes: View {
     @State var mesh: MeshController;
 
     var body: some View {
         ZStack {
-            ForEach(mesh.blocks) { node in
-                BlockView(
+            ForEach(mesh.nodes) { node in
+                NodeView(
                     block_color: Color.indigo,
                     node: node
                 )
@@ -26,8 +26,8 @@ struct ListOfBlocks: View {
     }
 }
 
-struct PaneMapView_Previews: PreviewProvider {
+struct ListOfNodes_Previews: PreviewProvider {
     static var previews: some View {
-        return ListOfBlocks(mesh: MeshController())
+        return ListOfNodes(mesh: MeshController.default)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  BlockModel.swift
+//  NodeModel.swift
 //  DynaDesign
 //
 //  Created by Thanasis Papapostolou on 10/12/21.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-typealias BlockID = UUID;
+typealias NodeID = UUID;
 
-struct BlockModel: Identifiable {
-    var id: BlockID = BlockID();
+struct NodeModel: Identifiable {
+    var id: NodeID = NodeID();
     var position: CGPoint = .zero;
 }
