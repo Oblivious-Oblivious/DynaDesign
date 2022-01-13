@@ -27,25 +27,25 @@ struct PaneView: View {
     @State var current_portal_position: CGPoint?;
     
     var body: some View {
-        GeometryReader { pane in
+        ZStack {
+            Rectangle()
+                .fill(self.pane_color)
+                .ignoresSafeArea();
+            
             ZStack {
-                Rectangle()
-                    .fill(self.pane_color)
-                    .ignoresSafeArea();
-                
                 PaneMapView()
-                    /* Follow the zoom event */
-                    .scaleEffect(self.zoom_scale)
-                    
-                    /* Follow the position drag event */
-                    .offset(
-                        x: self.portal_position.x + self.drag_offset.width,
-                        y: self.portal_position.y + self.drag_offset.height
-                    )
             }
-            .gesture(pane_drag_gesture(on: pane))
-            .gesture(pane_magnification_gesture());
+            /* Follow the zoom event */
+            .scaleEffect(self.zoom_scale)
+            
+            /* Follow the position drag event */
+            .offset(
+                x: self.portal_position.x + self.drag_offset.width,
+                y: self.portal_position.y + self.drag_offset.height
+            );
         }
+        .gesture(pane_drag_gesture())
+        .gesture(pane_magnification_gesture());
     }
 }
 
