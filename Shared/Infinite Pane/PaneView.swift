@@ -11,7 +11,7 @@ struct PaneView: View {
     @EnvironmentObject var model_data: ModelData;
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
-    @State var mesh: MeshController;
+    @ObservedObject var mesh: MeshController;
     @State var pane_color: Color;
     
     /* Dragging */
@@ -33,7 +33,8 @@ struct PaneView: View {
                 .ignoresSafeArea();
             
             ZStack {
-                PaneMapView()
+                ListOfNodes(nodes: $mesh.nodes)
+                ListOfEdges(edges: $mesh.links)
             }
             /* Follow the zoom event */
             .scaleEffect(self.zoom_scale)
