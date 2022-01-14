@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ListOfNodes: View {
-    @State var mesh: MeshController;
+    @Binding var nodes: [NodeModel];
 
     var body: some View {
         ZStack {
-            ForEach(mesh.nodes) { node in
+            ForEach(nodes) { node in
                 NodeView(
                     block_color: Color.indigo,
                     node: node
@@ -28,6 +28,6 @@ struct ListOfNodes: View {
 
 struct ListOfNodes_Previews: PreviewProvider {
     static var previews: some View {
-        return ListOfNodes(mesh: MeshController.default)
+        return ListOfNodes(nodes: .constant(MeshController.default.nodes))
     }
 }
