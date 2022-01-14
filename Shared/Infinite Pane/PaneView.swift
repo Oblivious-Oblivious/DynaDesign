@@ -55,7 +55,7 @@ struct PaneView_Previews: PreviewProvider {
     static var previews: some View {
         return PaneView(
             zoom_scale: $zoom_scale,
-            mesh: MeshController(),
+            mesh: MeshController.default,
             pane_color: Color("PaneColor")
         )
         .environmentObject(ModelData())
