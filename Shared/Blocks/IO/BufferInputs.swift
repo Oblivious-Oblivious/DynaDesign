@@ -8,7 +8,7 @@
 import SwiftUI
 
 private struct BufferInputsSymbol: Shape {
-    @State var position: CGFloat;
+    @State var offset_value: CGFloat;
 
     func path(in rect: CGRect) -> Path {
         Path { path in
@@ -16,10 +16,10 @@ private struct BufferInputsSymbol: Shape {
             let height = rect.height;
             
             path.addLines([
-                CGPoint(x: -0.2 * width, y: (position-0.01) * height),
-                CGPoint(x: 0.025 * width, y: (position-0.01) * height),
-                CGPoint(x: 0.025 * width, y: (position+0.01) * height),
-                CGPoint(x: -0.2 * width, y: (position+0.01) * height)
+                CGPoint(x: -0.2 * width, y: (offset_value-0.01) * height),
+                CGPoint(x: 0.025 * width, y: (offset_value-0.01) * height),
+                CGPoint(x: 0.025 * width, y: (offset_value+0.01) * height),
+                CGPoint(x: -0.2 * width, y: (offset_value+0.01) * height)
             ]);
 
             path.closeSubpath();
