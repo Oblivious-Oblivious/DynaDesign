@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension PaneView {
-    private func process_drag_change(_ value: DragGesture.Value) {
+    private func start_dragging(_ value: DragGesture.Value) {
         if !self.is_dragging {
             self.is_dragging = true;
             self.is_dragging_mesh = true;
@@ -19,7 +19,7 @@ extension PaneView {
         }
     }
     
-    private func process_drag_end(_ value: DragGesture.Value) {
+    private func end_dragging(_ value: DragGesture.Value) {
         self.is_dragging = false;
         self.drag_offset = .zero;
         
@@ -35,12 +35,12 @@ extension PaneView {
         DragGesture()
             .onChanged { value in
                 withAnimation(.spring()) {
-                    self.process_drag_change(value);
+                    self.start_dragging(value);
                 }
             }
             .onEnded { value in
                 withAnimation(.spring()) {
-                    self.process_drag_end(value);
+                    self.end_dragging(value);
                 }
             };
     }
