@@ -34,7 +34,7 @@ struct PaneView: View {
             
             ZStack {
                 ListOfNodes(nodes: $mesh.nodes)
-                ListOfEdges(edges: $mesh.links)
+                ListOfEdges(links: $mesh.links)
             }
             /* Follow the zoom event */
             .scaleEffect(self.zoom_scale)
