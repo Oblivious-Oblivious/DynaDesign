@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PaneView: View {
+    /* Extensions */
     @EnvironmentObject var model_data: ModelData;
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
