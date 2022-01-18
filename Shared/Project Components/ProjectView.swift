@@ -13,8 +13,12 @@ struct ProjectView: View {
 
     var body: some View {
         ZStack {
-            ProjectMenu(project: project)
-                .zIndex(1);
+            ProjectMenu(
+                zoom_scale: $model_data.projects_list.first(where: {
+                    $0.id == project.id
+                })!.zoom_scale
+            )
+            .zIndex(1);
 
             PaneView(
                 zoom_scale: $model_data.projects_list.first(where: {
