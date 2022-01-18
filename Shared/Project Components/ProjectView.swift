@@ -13,11 +13,13 @@ struct ProjectView: View {
 
     var body: some View {
         ZStack {
-            ProjectMenu()
+            ProjectMenu(project: project)
                 .zIndex(1);
 
             PaneView(
-                zoom_scale: $model_data.project_menu_options.zoom_scale,
+                zoom_scale: $model_data.projects_list.first(where: {
+                    $0.id == project.id
+                })!.zoom_scale,
                 mesh: project.mesh,
                 pane_color: Color("PaneColor")
             )

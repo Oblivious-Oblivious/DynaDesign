@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProjectMenu: View {
     @EnvironmentObject var model_data: ModelData;
+    @State var project: ProjectModel;
 
     var body: some View {
         GeometryReader { geo in
@@ -23,7 +24,9 @@ struct ProjectMenu: View {
             SettingsBar(
                 width: settings_bar_width,
                 height: menu_height,
-                zoom_scale: $model_data.project_menu_options.zoom_scale
+                zoom_scale: $model_data.projects_list.first(where: {
+                    $0.id == project.id
+                })!.zoom_scale
             )
             .offset(
                 x: (width - settings_bar_width) / 2,
@@ -70,7 +73,7 @@ struct ProjectMenu: View {
 
 struct ProjectMenu_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectMenu()
+        ProjectMenu(project: ProjectModel(mesh: MeshController.default))
             .environmentObject(ModelData());
     }
 }

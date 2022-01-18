@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class ModelData: ObservableObject {
-    var projects_list: [ProjectModel] = ProjectModel.default;
+    @Published var projects_list: [ProjectModel] = ProjectModel.default;
     
     @Published var grid_options = GridSettingsModel.default;
     @Published var project_menu_options = ProjectSettingsModel.default;
