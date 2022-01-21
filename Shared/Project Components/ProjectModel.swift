@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProjectModel: Identifiable {
     var id = UUID();
-    var mesh: MeshController;
+    var pane: PaneModel = PaneModel();
     var zoom_scale: CGFloat = 1;
+    
+    var mesh: MeshController;
 }

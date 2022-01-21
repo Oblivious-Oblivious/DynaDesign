@@ -15,18 +15,18 @@ extension PaneView {
         }
         
         if self.is_dragging_mesh {
-            drag_offset = value.translation;
+            self.pane.drag_offset = value.translation;
         }
     }
     
     private func end_dragging(_ value: DragGesture.Value) {
         self.is_dragging = false;
-        self.drag_offset = .zero;
+        self.pane.drag_offset = .zero;
         
         if self.is_dragging_mesh {
-            portal_position = CGPoint(
-                x: portal_position.x + value.translation.width,
-                y: portal_position.y + value.translation.height
+            self.pane.portal_position = CGPoint(
+                x: self.pane.portal_position.x + value.translation.width,
+                y: self.pane.portal_position.y + value.translation.height
             );
         }
     }

@@ -12,10 +12,7 @@ struct PaneView: View {
     @Binding var zoom_scale: CGFloat;
     @ObservedObject var mesh: MeshController;
     @State var pane_color: Color;
-    
-    /* Dragging */
-    @State var portal_position = CGPoint.zero;
-    @State var drag_offset = CGSize.zero;
+    @Binding var pane: PaneModel;
     
     /* PaneView+Drag */
     @State var is_dragging = false;
@@ -40,8 +37,8 @@ struct PaneView: View {
             
             /* Follow the position drag event */
             .offset(
-                x: self.portal_position.x + self.drag_offset.width,
-                y: self.portal_position.y + self.drag_offset.height
+                x: pane.portal_position.x + pane.drag_offset.width,
+                y: pane.portal_position.y + pane.drag_offset.height
             );
         }
         .gesture(pane_drag_gesture())
@@ -56,7 +53,8 @@ struct PaneView_Previews: PreviewProvider {
         return PaneView(
             zoom_scale: $zoom_scale,
             mesh: MeshController.sample_mesh(),
-            pane_color: Color("PaneColor")
+            pane_color: Color("PaneColor"),
+            pane: .constant(PaneModel())
         )
     }
 }

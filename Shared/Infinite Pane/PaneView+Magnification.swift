@@ -30,7 +30,7 @@ extension PaneView {
         
         /* Position to zoom towards */
         if !clamped.did_clamp, let point = self.current_portal_position {
-            self.portal_position = scaled_offset(value, initial_value: point);
+            self.pane.portal_position = scaled_offset(value, initial_value: point);
         }
     }
     
@@ -40,7 +40,7 @@ extension PaneView {
                 withAnimation(.spring()) {
                     if self.current_zoom_scale == nil {
                         self.current_zoom_scale = self.zoom_scale;
-                        self.current_portal_position = self.portal_position;
+                        self.current_portal_position = self.pane.portal_position;
                     }
                     self.process_scale_change(value);
                 }
