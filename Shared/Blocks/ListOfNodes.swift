@@ -17,10 +17,6 @@ struct ListOfNodes: View {
                     block_color: Color.indigo,
                     node: node
                 )
-                .offset(
-                    x: node.position.x,
-                    y: node.position.y
-                )
             }
         }
     }
