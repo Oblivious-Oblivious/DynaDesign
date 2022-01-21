@@ -43,7 +43,7 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project: ProjectModel(mesh: MeshController.sample_mesh()))
+        ProjectView(project: .constant(ProjectModel(mesh: MeshController.sample_mesh())))
             .environmentObject(ModelData());
     }
 }

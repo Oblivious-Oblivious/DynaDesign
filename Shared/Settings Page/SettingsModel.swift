@@ -10,9 +10,4 @@ import Foundation
 struct SettingsModel {
     var username: String;
     var is_left_handed: Bool = false;
-    
-    static let `default` = SettingsModel(
-        username: "@user",
-        is_left_handed: false
-    );
 }
