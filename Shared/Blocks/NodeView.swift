@@ -9,12 +9,12 @@ import SwiftUI
 
 struct NodeView: View {
     var block_color: Color;
-    @State var node: NodeModel;
-    
+    @Binding var node: NodeModel;
+
     @State var animate = false;
 
     var body: some View {
-        XnorGate(size: 50, color: self.block_color)
+        NandGate(size: 50, color: self.block_color)
             .scaleEffect(scale_amount())
             .opacity(opacity_amount())
             .position(node.position)
@@ -26,7 +26,7 @@ struct NodeView_Previews: PreviewProvider {
     static var previews: some View {
         NodeView(
             block_color: Color.blue,
-            node: NodeModel()
+            node: .constant(NodeModel(position: .zero))
         );
     }
 }

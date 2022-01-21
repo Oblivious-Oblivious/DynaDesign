@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct PaneView: View {
-    /* Extensions */
-    @EnvironmentObject var model_data: ModelData;
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
     @ObservedObject var mesh: MeshController;
@@ -57,9 +55,8 @@ struct PaneView_Previews: PreviewProvider {
     static var previews: some View {
         return PaneView(
             zoom_scale: $zoom_scale,
-            mesh: .constant(MeshController.sample_mesh()),
+            mesh: MeshController.sample_mesh(),
             pane_color: Color("PaneColor")
         )
-        .environmentObject(ModelData())
     }
 }

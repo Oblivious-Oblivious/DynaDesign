@@ -12,7 +12,7 @@ struct ListOfNodes: View {
 
     var body: some View {
         ZStack {
-            ForEach(nodes) { node in
+            ForEach($nodes) { node in
                 NodeView(
                     block_color: Color.indigo,
                     node: node
@@ -24,6 +24,6 @@ struct ListOfNodes: View {
 
 struct ListOfNodes_Previews: PreviewProvider {
     static var previews: some View {
-        return ListOfNodes(nodes: .constant(MeshController.default.nodes))
+        ListOfNodes(nodes: .constant(MeshController.sample_mesh().nodes))
     }
 }
