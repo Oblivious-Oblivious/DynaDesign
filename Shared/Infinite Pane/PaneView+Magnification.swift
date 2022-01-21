@@ -42,12 +42,12 @@ extension PaneView {
                         self.current_zoom_scale = self.zoom_scale;
                         self.current_portal_position = self.pane.portal_position;
                     }
-                    self.process_scale_change(value);
+                    process_scale_change(value);
                 }
             }
             .onEnded { value in
                 withAnimation(.spring()) {
-                    self.process_scale_change(value);
+                    process_scale_change(value);
                     self.current_zoom_scale = nil;
                     self.current_portal_position = nil;
                 }
