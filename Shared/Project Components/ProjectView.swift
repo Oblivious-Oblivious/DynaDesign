@@ -25,7 +25,6 @@ struct ProjectView: View {
                     $0.id == project.id
                 })!.zoom_scale,
                 mesh: project.mesh,
-                pane_color: Color("PaneColor"),
                 pane: $model_data.projects_list.first(where: {
                     $0.id == project.id
                 })!.pane

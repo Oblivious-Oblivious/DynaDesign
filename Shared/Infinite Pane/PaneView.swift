@@ -11,7 +11,6 @@ struct PaneView: View {
     /* Zooming */
     @Binding var zoom_scale: CGFloat;
     @ObservedObject var mesh: MeshController;
-    @State var pane_color: Color;
     @Binding var pane: PaneModel;
     
     /* PaneView+Drag */
@@ -25,7 +24,7 @@ struct PaneView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(self.pane_color)
+                .fill(pane.pane_color)
                 .ignoresSafeArea();
             
             ZStack {
@@ -53,7 +52,6 @@ struct PaneView_Previews: PreviewProvider {
         return PaneView(
             zoom_scale: $zoom_scale,
             mesh: MeshController.sample_mesh(),
-            pane_color: Color("PaneColor"),
             pane: .constant(PaneModel())
         )
     }

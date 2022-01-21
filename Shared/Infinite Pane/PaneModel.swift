@@ -11,4 +11,6 @@ struct PaneModel {
     /* Dragging */
     var portal_position = CGPoint.zero;
     var drag_offset = CGSize.zero;
+    
+    @State var pane_color: Color = Color("PaneColor");
 }
