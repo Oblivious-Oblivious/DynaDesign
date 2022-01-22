@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76062F05278C2030002057FA /* EdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76062F04278C2030002057FA /* EdgeView.swift */; };
+		76062F07278C2038002057FA /* ListOfEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76062F06278C2038002057FA /* ListOfEdges.swift */; };
+		7606B363279B4E7100E9774E /* PaneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606B362279B4E7100E9774E /* PaneModel.swift */; };
+		761DDBD627903B6A00E2D6BB /* Int+Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761DDBD527903B6A00E2D6BB /* Int+Times.swift */; };
+		761DDBDC2790427700E2D6BB /* EdgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761DDBDB2790427700E2D6BB /* EdgeModel.swift */; };
 		761EE3F02787EA9900EDF21A /* BufferInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EE3EF2787EA9900EDF21A /* BufferInputs.swift */; };
 		761EE3F22787F16E00EDF21A /* GateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EE3F12787F16E00EDF21A /* GateText.swift */; };
 		761EE3F62787F39900EDF21A /* NorGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EE3F52787F39900EDF21A /* NorGate.swift */; };
@@ -31,23 +36,22 @@
 		766B3C5F2762FEE500E41C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C4E2762FEE300E41C9D /* ContentView.swift */; };
 		766B3C612762FEE500E41C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766B3C4F2762FEE500E41C9D /* Assets.xcassets */; };
 		766B3C822763AEE600E41C9D /* PaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C812763AEE600E41C9D /* PaneView.swift */; };
-		766B3C852763B03A00E41C9D /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C842763B03A00E41C9D /* SelectionController.swift */; };
 		766B3C882763B07E00E41C9D /* MeshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C872763B07D00E41C9D /* MeshController.swift */; };
 		766B3C8B2763B0A700E41C9D /* MeshController+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8A2763B0A700E41C9D /* MeshController+Demo.swift */; };
 		766B3C8E2763B0EF00E41C9D /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C8D2763B0EF00E41C9D /* NodeModel.swift */; };
-		766B3C912763B10600E41C9D /* DragModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3C902763B10600E41C9D /* DragModel.swift */; };
-		766B3CA12763B46100E41C9D /* PaneMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA02763B46100E41C9D /* PaneMapView.swift */; };
-		766B3CA42763B6A800E41C9D /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA32763B6A800E41C9D /* BlockView.swift */; };
+		766B3CA12763B46100E41C9D /* ListOfNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA02763B46100E41C9D /* ListOfNodes.swift */; };
+		766B3CA42763B6A800E41C9D /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA32763B6A800E41C9D /* NodeView.swift */; };
 		766B3CA72763BDD400E41C9D /* PaneView+Magnification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA62763BDD400E41C9D /* PaneView+Magnification.swift */; };
 		766B3CAA2763BF3400E41C9D /* PaneView+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CA92763BF3400E41C9D /* PaneView+Drag.swift */; };
-		766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */; };
-		766B3CB32763C31200E41C9D /* BlockView+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CB22763C31200E41C9D /* BlockView+Drag.swift */; };
+		766B3CB32763C31200E41C9D /* NodeView+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B3CB22763C31200E41C9D /* NodeView+Drag.swift */; };
 		7689EF7E2786B26F006806F3 /* OrGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689EF7D2786B26F006806F3 /* OrGate.swift */; };
 		7689EF802787D721006806F3 /* NotGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689EF7F2787D721006806F3 /* NotGate.swift */; };
 		7689EF822787E52B006806F3 /* NegationBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689EF812787E52B006806F3 /* NegationBall.swift */; };
 		7689EF842787E657006806F3 /* BufferOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689EF832787E657006806F3 /* BufferOutput.swift */; };
 		7689EF862787E65C006806F3 /* NegationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689EF852787E65C006806F3 /* NegationOutput.swift */; };
 		76A0346C2770382200BE610E /* SignInPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0346B2770382200BE610E /* SignInPageView.swift */; };
+		76A0E1FB27921390006761E9 /* CGPoint+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0E1FA2792138F006761E9 /* CGPoint+Helper.swift */; };
+		76A0E1FD27955E1F006761E9 /* GateIOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0E1FC27955E1F006761E9 /* GateIOProtocol.swift */; };
 		76A3600A27704E2300E833A7 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A3600927704E2300E833A7 /* GridView.swift */; };
 		76A360112770F75A00E833A7 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A360102770F75A00E833A7 /* ProjectModel.swift */; };
 		76A360132770F82E00E833A7 /* ProjectModel+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */; };
@@ -55,6 +59,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76062F04278C2030002057FA /* EdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeView.swift; sourceTree = "<group>"; };
+		76062F06278C2038002057FA /* ListOfEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfEdges.swift; sourceTree = "<group>"; };
+		7606B362279B4E7100E9774E /* PaneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneModel.swift; sourceTree = "<group>"; };
+		761DDBD527903B6A00E2D6BB /* Int+Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Times.swift"; sourceTree = "<group>"; };
+		761DDBDB2790427700E2D6BB /* EdgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeModel.swift; sourceTree = "<group>"; };
 		761EE3EF2787EA9900EDF21A /* BufferInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferInputs.swift; sourceTree = "<group>"; };
 		761EE3F12787F16E00EDF21A /* GateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateText.swift; sourceTree = "<group>"; };
 		761EE3F52787F39900EDF21A /* NorGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorGate.swift; sourceTree = "<group>"; };
@@ -80,23 +89,22 @@
 		766B3C4F2762FEE500E41C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766B3C542762FEE500E41C9D /* DynaDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynaDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766B3C812763AEE600E41C9D /* PaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneView.swift; sourceTree = "<group>"; };
-		766B3C842763B03A00E41C9D /* SelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
 		766B3C872763B07D00E41C9D /* MeshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshController.swift; sourceTree = "<group>"; };
 		766B3C8A2763B0A700E41C9D /* MeshController+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeshController+Demo.swift"; sourceTree = "<group>"; };
 		766B3C8D2763B0EF00E41C9D /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
-		766B3C902763B10600E41C9D /* DragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragModel.swift; sourceTree = "<group>"; };
-		766B3CA02763B46100E41C9D /* PaneMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneMapView.swift; sourceTree = "<group>"; };
-		766B3CA32763B6A800E41C9D /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		766B3CA02763B46100E41C9D /* ListOfNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfNodes.swift; sourceTree = "<group>"; };
+		766B3CA32763B6A800E41C9D /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		766B3CA62763BDD400E41C9D /* PaneView+Magnification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaneView+Magnification.swift"; sourceTree = "<group>"; };
 		766B3CA92763BF3400E41C9D /* PaneView+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaneView+Drag.swift"; sourceTree = "<group>"; };
-		766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Helper.swift"; sourceTree = "<group>"; };
-		766B3CB22763C31200E41C9D /* BlockView+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlockView+Drag.swift"; sourceTree = "<group>"; };
+		766B3CB22763C31200E41C9D /* NodeView+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeView+Drag.swift"; sourceTree = "<group>"; };
 		7689EF7D2786B26F006806F3 /* OrGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrGate.swift; sourceTree = "<group>"; };
 		7689EF7F2787D721006806F3 /* NotGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotGate.swift; sourceTree = "<group>"; };
 		7689EF812787E52B006806F3 /* NegationBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegationBall.swift; sourceTree = "<group>"; };
 		7689EF832787E657006806F3 /* BufferOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferOutput.swift; sourceTree = "<group>"; };
 		7689EF852787E65C006806F3 /* NegationOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegationOutput.swift; sourceTree = "<group>"; };
 		76A0346B2770382200BE610E /* SignInPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageView.swift; sourceTree = "<group>"; };
+		76A0E1FA2792138F006761E9 /* CGPoint+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Helper.swift"; sourceTree = "<group>"; };
+		76A0E1FC27955E1F006761E9 /* GateIOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateIOProtocol.swift; sourceTree = "<group>"; };
 		76A3600927704E2300E833A7 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		76A360102770F75A00E833A7 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProjectModel+Demo.swift"; sourceTree = "<group>"; };
@@ -114,11 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76062F03278C1F13002057FA /* Edges */ = {
+		76062F03278C1F13002057FA /* Connections */ = {
 			isa = PBXGroup;
 			children = (
+				761DDBDB2790427700E2D6BB /* EdgeModel.swift */,
+				76062F04278C2030002057FA /* EdgeView.swift */,
+				76062F06278C2038002057FA /* ListOfEdges.swift */,
 			);
-			path = Edges;
+			path = Connections;
 			sourceTree = "<group>";
 		};
 		761EE3F32787F21A00EDF21A /* Gates */ = {
@@ -141,6 +152,7 @@
 			children = (
 				761EE3EF2787EA9900EDF21A /* BufferInputs.swift */,
 				7689EF832787E657006806F3 /* BufferOutput.swift */,
+				76A0E1FC27955E1F006761E9 /* GateIOProtocol.swift */,
 				761EE3F12787F16E00EDF21A /* GateText.swift */,
 				7689EF812787E52B006806F3 /* NegationBall.swift */,
 				7689EF852787E65C006806F3 /* NegationOutput.swift */,
@@ -175,6 +187,7 @@
 				763F3BCB277196A5004274BA /* ProjectMenu.swift */,
 				765652CB278ADB8400D9D591 /* ProjectMenu+Position.swift */,
 				76A360102770F75A00E833A7 /* ProjectModel.swift */,
+				76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */,
 				765652C7278A821E00D9D591 /* ProjectSettingsModel.swift */,
 				763F3BC227713906004274BA /* ProjectView.swift */,
 			);
@@ -193,17 +206,16 @@
 			isa = PBXGroup;
 			children = (
 				766B3C9F2763B44400E41C9D /* Blocks */,
-				76062F03278C1F13002057FA /* Edges */,
+				76062F03278C1F13002057FA /* Connections */,
 				76A3601627711DF500E833A7 /* Infinite Pane */,
-				76A3601827711F0800E833A7 /* Node Selection */,
 				763F3BCA27718532004274BA /* Project Components */,
 				76A3601927711F3600E833A7 /* Project Grid */,
 				76A3601A27711F8C00E833A7 /* Settings Page */,
 				761EE4032788F91E00EDF21A /* SignIn Page */,
 				766B3CB52763C45200E41C9D /* SwiftUI Internals */,
 				766B3C4E2762FEE300E41C9D /* ContentView.swift */,
-				761EE4062788FEC000EDF21A /* ModelData.swift */,
 				766B3C4D2762FEE300E41C9D /* DynaDesignApp.swift */,
+				761EE4062788FEC000EDF21A /* ModelData.swift */,
 				766B3C4F2762FEE500E41C9D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -222,8 +234,10 @@
 			children = (
 				761EE3F42787F22300EDF21A /* IO */,
 				761EE3F32787F21A00EDF21A /* Gates */,
-				766B3CA32763B6A800E41C9D /* BlockView.swift */,
-				766B3CB22763C31200E41C9D /* BlockView+Drag.swift */,
+				766B3C8D2763B0EF00E41C9D /* NodeModel.swift */,
+				766B3CA32763B6A800E41C9D /* NodeView.swift */,
+				766B3CB22763C31200E41C9D /* NodeView+Drag.swift */,
+				766B3CA02763B46100E41C9D /* ListOfNodes.swift */,
 			);
 			path = Blocks;
 			sourceTree = "<group>";
@@ -231,7 +245,8 @@
 		766B3CB52763C45200E41C9D /* SwiftUI Internals */ = {
 			isa = PBXGroup;
 			children = (
-				766B3CAC2763C13600E41C9D /* CGSize+Helper.swift */,
+				76A0E1FA2792138F006761E9 /* CGPoint+Helper.swift */,
+				761DDBD527903B6A00E2D6BB /* Int+Times.swift */,
 			);
 			path = "SwiftUI Internals";
 			sourceTree = "<group>";
@@ -240,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				76A3601727711ECE00E833A7 /* Mesh */,
-				766B3CA02763B46100E41C9D /* PaneMapView.swift */,
+				7606B362279B4E7100E9774E /* PaneModel.swift */,
 				766B3C812763AEE600E41C9D /* PaneView.swift */,
 				766B3CA92763BF3400E41C9D /* PaneView+Drag.swift */,
 				766B3CA62763BDD400E41C9D /* PaneView+Magnification.swift */,
@@ -257,21 +272,10 @@
 			path = Mesh;
 			sourceTree = "<group>";
 		};
-		76A3601827711F0800E833A7 /* Node Selection */ = {
-			isa = PBXGroup;
-			children = (
-				766B3C902763B10600E41C9D /* DragModel.swift */,
-				766B3C8D2763B0EF00E41C9D /* NodeModel.swift */,
-				766B3C842763B03A00E41C9D /* SelectionController.swift */,
-			);
-			path = "Node Selection";
-			sourceTree = "<group>";
-		};
 		76A3601927711F3600E833A7 /* Project Grid */ = {
 			isa = PBXGroup;
 			children = (
 				76A3600927704E2300E833A7 /* GridView.swift */,
-				76A360122770F82E00E833A7 /* ProjectModel+Demo.swift */,
 				765652C9278A84B600D9D591 /* GridSettingsModel.swift */,
 			);
 			path = "Project Grid";
@@ -360,11 +364,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				766B3C5F2762FEE500E41C9D /* ContentView.swift in Sources */,
-				766B3CB32763C31200E41C9D /* BlockView+Drag.swift in Sources */,
+				766B3CB32763C31200E41C9D /* NodeView+Drag.swift in Sources */,
 				76BE10942783F0900024F526 /* BackButton+Tap.swift in Sources */,
 				765652C8278A821E00D9D591 /* ProjectSettingsModel.swift in Sources */,
-				766B3CA42763B6A800E41C9D /* BlockView.swift in Sources */,
-				766B3C852763B03A00E41C9D /* SelectionController.swift in Sources */,
+				766B3CA42763B6A800E41C9D /* NodeView.swift in Sources */,
 				76A360132770F82E00E833A7 /* ProjectModel+Demo.swift in Sources */,
 				761EE3F62787F39900EDF21A /* NorGate.swift in Sources */,
 				763F3BC827717509004274BA /* SettingsBar.swift in Sources */,
@@ -377,32 +380,37 @@
 				761EE3F02787EA9900EDF21A /* BufferInputs.swift in Sources */,
 				76A360112770F75A00E833A7 /* ProjectModel.swift in Sources */,
 				766B3C5D2762FEE500E41C9D /* DynaDesignApp.swift in Sources */,
+				761DDBD627903B6A00E2D6BB /* Int+Times.swift in Sources */,
 				763F3BC527715646004274BA /* BackButton.swift in Sources */,
-				766B3C912763B10600E41C9D /* DragModel.swift in Sources */,
 				761EE3F22787F16E00EDF21A /* GateText.swift in Sources */,
 				766B3C8B2763B0A700E41C9D /* MeshController+Demo.swift in Sources */,
 				766B3C822763AEE600E41C9D /* PaneView.swift in Sources */,
 				76A3600A27704E2300E833A7 /* GridView.swift in Sources */,
 				763F3BC327713907004274BA /* ProjectView.swift in Sources */,
+				76A0E1FB27921390006761E9 /* CGPoint+Helper.swift in Sources */,
 				765652CA278A84B600D9D591 /* GridSettingsModel.swift in Sources */,
 				764E2878277A78F500F0B9B7 /* ModifierButton+Tap.swift in Sources */,
+				76062F05278C2030002057FA /* EdgeView.swift in Sources */,
 				761EE4052788FA5100EDF21A /* SettingsModel.swift in Sources */,
-				766B3CA12763B46100E41C9D /* PaneMapView.swift in Sources */,
+				766B3CA12763B46100E41C9D /* ListOfNodes.swift in Sources */,
 				76A0346C2770382200BE610E /* SignInPageView.swift in Sources */,
 				761EE3FA2788178100EDF21A /* AndGate.swift in Sources */,
 				761EE3FC27881C1100EDF21A /* NandGate.swift in Sources */,
 				766B3C882763B07E00E41C9D /* MeshController.swift in Sources */,
+				761DDBDC2790427700E2D6BB /* EdgeModel.swift in Sources */,
 				7689EF822787E52B006806F3 /* NegationBall.swift in Sources */,
+				76A0E1FD27955E1F006761E9 /* GateIOProtocol.swift in Sources */,
 				7689EF802787D721006806F3 /* NotGate.swift in Sources */,
 				764528A227726884003C5156 /* ModifierButton.swift in Sources */,
 				7689EF842787E657006806F3 /* BufferOutput.swift in Sources */,
 				761EE4022788472400EDF21A /* SettingsPageView.swift in Sources */,
 				7689EF862787E65C006806F3 /* NegationOutput.swift in Sources */,
-				766B3CAD2763C13600E41C9D /* CGSize+Helper.swift in Sources */,
 				763F3BCC277196A5004274BA /* ProjectMenu.swift in Sources */,
 				761EE3F82787F46400EDF21A /* BufferGate.swift in Sources */,
 				766B3C8E2763B0EF00E41C9D /* NodeModel.swift in Sources */,
 				761EE4072788FEC000EDF21A /* ModelData.swift in Sources */,
+				76062F07278C2038002057FA /* ListOfEdges.swift in Sources */,
+				7606B363279B4E7100E9774E /* PaneModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "DynaDesign (iOS).entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R25Q8NQQ3;
@@ -558,7 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "DynaDesign (iOS).entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R25Q8NQQ3;
