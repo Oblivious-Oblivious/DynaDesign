@@ -10,6 +10,7 @@ import SwiftUI
 struct NodeView: View {
     var block_color: Color;
     @Binding var node: NodeModel;
+    @State var mesh: MeshController;
 
     @State var animate = false;
 
@@ -26,7 +27,8 @@ struct NodeView_Previews: PreviewProvider {
     static var previews: some View {
         NodeView(
             block_color: Color.blue,
-            node: .constant(NodeModel(position: .zero))
+            node: .constant(NodeModel(position: .zero)),
+            mesh: MeshController.sample_mesh()
         );
     }
 }

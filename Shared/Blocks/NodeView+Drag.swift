@@ -22,6 +22,7 @@ extension NodeView {
                 withAnimation(.easeInOut(duration: 0.33)) {
                     self.animate = true;
                     node.position = value.location;
+                    mesh.rebuild_links();
                 }
             })
             .onEnded({ _ in

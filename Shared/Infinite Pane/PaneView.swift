@@ -28,7 +28,7 @@ struct PaneView: View {
                 .ignoresSafeArea();
             
             ZStack {
-                ListOfNodes(nodes: $mesh.nodes)
+                ListOfNodes(nodes: $mesh.nodes, mesh: mesh)
                 ListOfEdges(links: $mesh.links)
             }
             /* Follow the zoom event */
